@@ -1,6 +1,11 @@
 # (topic list to write)
 
-* treat you like adults
+* principles
+  * one platform
+  * work in the open
+  * own the whole stack
+  * treat you like adults / trust developers
+  * accessibility
 * Code review – expectations/what we do
 * Pairing
 * Auto-formatting, linting, warnings
@@ -10,6 +15,9 @@
 * Commit messages
 * Incident response – #wc-incident-response
 * repo structure
+* when to deploy to prod
+* rfcs
+* github permissions
 * Refactoring / sustainability
   * Why don't we say tech debt?
   * Why not platform health?
