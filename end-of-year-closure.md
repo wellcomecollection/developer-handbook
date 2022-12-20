@@ -22,3 +22,9 @@ This includes:
 * the date picker for requesting items
 
 If you’re running the website locally, you can [make the front-end code think it’s a different date](https://github.com/wellcomecollection/wellcomecollection.org/blob/9f50768da9c8fb7029985e16b16679056c549431/common/utils/dates.ts#L4-L19), so you can see how it will behave during the closure. You can check it's going to behave correctly, and check it matches the expectations of staff who’ll be working during the closure (e.g. see these [screenshots of the item picker](https://github.com/wellcomecollection/wellcomecollection.org/issues/8976) in the Christmas 2022 closure).
+
+## **Turn off services that won’t be used**
+
+This is a good rule in general, but especially when we won't be working for an extended period – don't leave unused or temporary services running.
+
+e.g. we often run multiple instances of the catalogue pipeline, but we should only keep the live pipeline running over the closure.
