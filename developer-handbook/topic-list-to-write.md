@@ -14,6 +14,7 @@
 * Tests
 * Commit messages
 * Incident response – #wc-incident-response
+* alerting
 * repo structure
 * when to deploy to prod
 * rfcs
