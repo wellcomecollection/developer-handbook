@@ -19,7 +19,7 @@ This does mean we might have a rocky period in January, when we deploy everythin
 This includes:
 
 * the display of opening times on the website
-* the date picker for requesting items
+* the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/catalogue/docs/turn-off-requesting.md), but we'd rather not)
 
 If you’re running the website locally, you can [make the front-end code think it’s a different date](https://github.com/wellcomecollection/wellcomecollection.org/blob/9f50768da9c8fb7029985e16b16679056c549431/common/utils/dates.ts#L4-L19), so you can see how it will behave during the closure. You can check it's going to behave correctly, and check it matches the expectations of staff who’ll be working during the closure (e.g. see these [screenshots of the item picker](https://github.com/wellcomecollection/wellcomecollection.org/issues/8976) in the Christmas 2022 closure).
 
