@@ -29,7 +29,3 @@
 * Refactoring / sustainability
   * Why don't we say tech debt?
   * Why not platform health?
-* Lang-specific notes
-  * FunctionComponent in React
-  * AWS instances – spin up short-lived, name + tag
-  * GitHub permissions
