@@ -10,6 +10,7 @@
 ## Language-specific notes
 
 * [Terraform: tagging our resources](language-specific-notes/terraform-tagging-our-resources.md)
+* [React: FC vs FunctionComponent](language-specific-notes/react-fc-vs-functioncomponent.md)
 
 ***
 
