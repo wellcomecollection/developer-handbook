@@ -19,6 +19,13 @@
 * when to deploy to prod
 * rfcs
 * github permissions
+* deployments
+* feature toggles / writing big new features
+* languages we use
+* infrastructure
+* monitoring
+* accessibility
+* how do we fit into broader digital/D\&T?
 * Refactoring / sustainability
   * Why don't we say tech debt?
   * Why not platform health?
@@ -26,3 +33,4 @@
   * Tags in Terraform
   * FunctionComponent in React
   * AWS instances – spin up short-lived, name + tag
+  * GitHub permissions
