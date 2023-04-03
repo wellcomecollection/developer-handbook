@@ -2,6 +2,10 @@
 
 * [Developer handbook](README.md)
   * [(topic list to write)](developer-handbook/topic-list-to-write.md)
+  * [URL Parameters strategy](developer-handbook/url-parameters-strategy.md)
+  * [Runbook](developer-handbook/runbook.md)
+  * [Principles](developer-handbook/principles.md)
+  * [Monitoring strategy](developer-handbook/monitoring-strategy.md)
 * [End-of-year closure](end-of-year-closure.md)
 
 ## Incident management
