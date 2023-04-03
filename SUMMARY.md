@@ -10,6 +10,7 @@
 
 ## Incident management
 
+* [When something goes bang](incident-management/when-something-goes-bang.md)
 * [Out-of-hours support](incident-management/out-of-hours-support.md)
 
 ## Language/tool-specific notes
