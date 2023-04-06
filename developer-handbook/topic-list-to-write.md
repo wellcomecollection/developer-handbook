@@ -13,7 +13,6 @@
 * CI / CD
 * Tests
 * Commit messages
-* Incident response – #wc-incident-response / incident retros
 * alerting
 * repo structure
 * when to deploy to prod

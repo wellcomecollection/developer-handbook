@@ -6,6 +6,7 @@
   * [Runbook](developer-handbook/runbook.md)
   * [Principles](developer-handbook/principles.md)
   * [Monitoring strategy](developer-handbook/monitoring-strategy.md)
+  * [Styling: rules of thumb](developer-handbook/styling-rules-of-thumb.md)
 * [End-of-year closure](end-of-year-closure.md)
 
 ## Incident management
