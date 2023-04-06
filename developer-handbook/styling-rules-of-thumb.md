@@ -29,7 +29,7 @@ As the team grows and more people are heavily involved with styling, we thought 
 
 We've now decided to move away from them, but we've discussed finding them useful for certain things, such as visibility rules. Most of them will slowly be removed ([see PR with most decisions documented](https://github.com/wellcomecollection/wellcomecollection.org/pull/9551)), and it can always be a conversation as to whether we'd like to delete more of them or create new ones.&#x20;
 
-The cleaning up was done for `utility-classes.ts`, but we are aware that more of them exist (see `typography.ts`, for example). These might be part of a wider review, but do always question them if need be. Ideally, going forward, we are moving away from utility classes.
+The decisions on what to keep/remove were done for `utility-classes.ts`, but we are aware that more of them exist (see `typography.ts`, for example). These might be part of a wider review, but do always question them if need be. Ideally, going forward, we are moving away from utility classes.
 
 ### Utility components
 
