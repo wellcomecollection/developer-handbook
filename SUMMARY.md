@@ -3,11 +3,11 @@
 * [Developer handbook](README.md)
   * [(topic list to write)](developer-handbook/topic-list-to-write.md)
   * [URL Parameters strategy](developer-handbook/url-parameters-strategy.md)
+  * [URLs on wellcomecollection.org](developer-handbook/urls-on-wellcomecollection.org.md)
   * [Runbook](developer-handbook/runbook.md)
   * [Principles](developer-handbook/principles.md)
   * [Monitoring strategy](developer-handbook/monitoring-strategy.md)
   * [Styling: rules of thumb](developer-handbook/styling-rules-of-thumb.md)
-  * [URLs on wellcomecollection.org](developer-handbook/urls-on-wellcomecollection.org.md)
 * [End-of-year closure](end-of-year-closure.md)
 
 ## Incident management
