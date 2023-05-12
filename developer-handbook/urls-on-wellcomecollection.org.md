@@ -53,7 +53,7 @@ If we are to have URLs that become canonical, but have been decided by another s
 
 ## Marketing redirects
 
-Full list [https://github.com/wellcomecollection/wellcomecollection.org/blob/3162ea6e6cfc049e9b6fa43ecff3e11118aa43c0/common/data/vanity-urls.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/3162ea6e6cfc049e9b6fa43ecff3e11118aa43c0/common/data/vanity-urls.ts)
+Full list [https://github.com/wellcomecollection/wellcomecollection.org/blob/main/common/data/vanity-urls.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/common/data/vanity-urls.ts)
 
 We can set up a vanity/marketing redirect in these cases:
 
