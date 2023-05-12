@@ -12,9 +12,7 @@ This is the canonical URL.
 
 For those pages where we need a more human readable URL, these need to be set up as a 3xx redirect.
 
-Full redirect list&#x20;
-
-[https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge\_lambdas/src/redirects.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge\_lambdas/src/redirects.ts)
+Full redirect list [https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge\_lambdas/src/redirects.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge\_lambdas/src/redirects.ts)
 
 Questions: Redirects put in place after migration from Drupal to Prismic - can they be deleted at any point?
 
