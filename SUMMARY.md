@@ -2,6 +2,7 @@
 
 * [Developer handbook](README.md)
   * [(topic list to write)](developer-handbook/topic-list-to-write.md)
+  * [Onboarding](developer-handbook/onboarding.md)
   * [URL Parameters strategy](developer-handbook/url-parameters-strategy.md)
   * [URLs on wellcomecollection.org](developer-handbook/urls-on-wellcomecollection.org.md)
   * [Runbook](developer-handbook/runbook.md)

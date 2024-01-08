@@ -19,8 +19,8 @@
 * rfcs
 * github permissions
 * deployments
-* feature toggles / writing big new features
-* languages we use
+* ~~feature toggles~~ (now in How We Work with a link to the README which should be sufficient for devs - Raph) / writing big new features
+* languages we use (would that be covered by the [Glossary](https://app.gitbook.com/o/-LumfFcEMKx4gYXKAZTQ/s/rniYBXXBIbZAbB7PW8m1/)? - Raph)
 * infrastructure
 * monitoring
 * accessibility
