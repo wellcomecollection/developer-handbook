@@ -4,6 +4,8 @@ description: URLs, redirects, marketing redirects (vanity URLs)
 
 # URLs on wellcomecollection.org
 
+See also [RFC 017 URL design](https://github.com/wellcomecollection/docs/tree/ea22876367b5be696da8e1cdab6ff3c7da072464/rfcs/017-url\_design)
+
 ## Current status (as of March 2020)
 
 Currently, we mint a URI at source, e.g. in Prismic, REST API.
