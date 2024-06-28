@@ -13,7 +13,6 @@
     * [URLs on wellcomecollection.org](developer-handbook/front-end/urls-on-wellcomecollection.org.md)
     * [URL Parameters strategy](developer-handbook/front-end/url-parameters-strategy.md)
     * [Styling: rules of thumb](developer-handbook/front-end/styling-rules-of-thumb.md)
-  * [Glossary](developer-handbook/glossary.md)
 * [End-of-year closure](end-of-year-closure.md)
 
 ## Incident management
