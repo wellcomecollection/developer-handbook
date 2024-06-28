@@ -6,7 +6,7 @@ description: We use a combination of methods to let us monitor the health of our
 
 ### Alerting
 
-tbd
+Alerts appear in our Slack channel.
 
 ### Health and performance
 
