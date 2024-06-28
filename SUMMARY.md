@@ -3,7 +3,6 @@
 * [Developer handbook](README.md)
   * [Onboarding](developer-handbook/onboarding.md)
   * [Process](developer-handbook/process.md)
-  * [How we use Slack](developer-handbook/how-we-use-slack.md)
   * [Monitoring strategy](developer-handbook/monitoring-strategy.md)
   * [Dependabot](developer-handbook/dependabot.md)
   * [Runbook](developer-handbook/runbook.md)
