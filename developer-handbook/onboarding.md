@@ -24,7 +24,7 @@ We use [Github projects](https://github.com/orgs/wellcomecollection/projects) to
 
 ### Code base
 
-Pull down local version for development. Please check the readme file and start both services catalogue and content. The [repository](urls-on-wellcomecollection.org.md) has other services as well within the repository.
+Pull down local version for development. Please check the readme file and start both services catalogue and content. The [repository](front-end/urls-on-wellcomecollection.org.md) has other services as well within the repository.
 
 The application uses [Next.js](https://nextjs.org/) which is a React framework
 
