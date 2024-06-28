@@ -40,7 +40,7 @@ Once code has been code reviewed and approved this can be merged into main.
 
 Main branch will be automatically deployed to the staging environment if required to be viewed or approved via business. Deployment to prod can be done through [Buildkite](https://buildkite.com/wellcomecollection) afterwards - ask a colleague  to help for the first time you do it and they can give you more details.
 
-### Api
+### API
 
 The platform calls three core API's, which Wellcome collection uses.
 
