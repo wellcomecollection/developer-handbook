@@ -1,15 +1,8 @@
 # Process
 
-We follow the [OKR process](https://en.wikipedia.org/wiki/OKR).
+See [How we work in Notion.](https://www.notion.so/wellcometrust/How-we-work-8dc54e71aee345009dbea1e4fba577f5?pvs=4)
 
 **Delivery over process** - do not follow these guidelines if they prevent you from delivering value as defined by our objectives.
-
-### Rituals
-
-* _Quarterly planning_: Higher level planning happening once a quarter to decide product changes to meet objectives.
-* _Fortnightly refinement_: Bringing higher level issues into scope for work, creating sub-issues for that work.
-* _Fortnightly retrospectives_: Reflecting on work in the previous fornight, what worked, what didn't, how to optimise.
-* _Ad-hoc retrospectives_: Retrospectives focussed on incidents or topics of special interest.
 
 ### Projects
 
