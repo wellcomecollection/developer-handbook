@@ -1,8 +1,6 @@
-# Process
+# GitHub Process
 
-See [How we work in Notion.](https://www.notion.so/wellcometrust/How-we-work-8dc54e71aee345009dbea1e4fba577f5?pvs=4)
-
-**Delivery over process** - do not follow these guidelines if they prevent you from delivering value as defined by our objectives.
+See [How we work in Notion](https://www.notion.so/wellcometrust/How-we-work-8dc54e71aee345009dbea1e4fba577f5?pvs=4) for a view on team processes.
 
 ### Projects
 
