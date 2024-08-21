@@ -28,6 +28,8 @@ A pull request should have a clear description with:
 
 If useful, leave comments throughout the code before making it "Ready for review", to add to the context of the changes. If they are important, or useful for future devs, it should be left as comments in the code instead.
 
+To bring attention to anything important or special, you can also add formatted notices, such as tips and alerts by using [GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts).
+
 Ask yourself:
 - Would new tests be relevant? If so, add them.
 - Does any external documentation need updating based on your changes. If so, ensure you link to them in the description.

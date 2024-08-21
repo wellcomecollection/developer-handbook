@@ -1,10 +1,8 @@
 # Code review
 
-You've been assign a Pull Request to review, and you want to get started.
+You've been assigned a Pull Request to review, and you want to get started. 
 
-- Ensure you follow the "How to test" section, and run your own tests on top of it if you can think of other useful ones.
-
-- Keep your comments friendly; we all know we are reviewing the code and not the coder, but the lines are easily blurred (for example, try not to use words like "simply", "easily", "just", "obviously", "well, actually...").
+- The tone we go for is a friendly one; we all know we are reviewing the code and not the coder, but the lines are easily blurred (for example, try not to use words like "simply", "easily", "just", "obviously", "well, actually...").
 
 - Code review is as much a priority as writing code is, so ensure you code review promptly to unblock your colleagues: make it part of your routine. For example, you could have a look at [the PR listing page](https://github.com/pulls/review-requested) in the morning, or in between pieces of work, to see if anything needs reviewing. If you can't find time, try to set a time aside in the future and let your colleagues know when that will be.
 
@@ -26,6 +24,8 @@ You've been assign a Pull Request to review, and you want to get started.
 	- Edge cases
 	- Leftovers from development, (e.g. `console.log`, addressed `TODO`s)
 	- Typos!
+
+- Ensure you follow the "How to test" section, and run your own tests on top of it if you can think of other useful ones.
 
 - If you see something cool, or a nice detail, point it out. Positive comments on a PR are always appreciated.
 
