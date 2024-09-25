@@ -16,7 +16,7 @@ Another important aspect of this is that it ensures that the lottery factor isn'
 
 If you're working on something big, consider splitting it in multiple PRs. If that's not possible, aim to split your commits logically, with meaningful commit messages.
 
-**Address `TODOs`**
+**Address `TODO`s**
 
 If there are `TODO`s in the changed files, even if they were there before you started your work: it's your responsability to check they have a chance to get addressed. 
 
