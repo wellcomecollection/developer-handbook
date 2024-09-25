@@ -5,6 +5,7 @@ Here are recommendations to consider from the moment you create a new branch to 
 ## Pre-creation considerations
 
 **Consider creating your Pull Request as soon as you can**
+
 Consider creating your Pull Request as soon as possible. Think of PRs less as validation of work done and more as visibility of work in progress. The description ideally offers context as to why the work is being done as well as explaining how the solution was decided on, which can be very helpful to reviewers. Create it as a draft, so no one gets notified of every commit.
 
 This will also let others gain some familiarity with the code changes, and might allow them to flag things in advance. 
@@ -12,9 +13,11 @@ This will also let others gain some familiarity with the code changes, and might
 Another important aspect of this is that it ensures that the lottery factor isn't a problem; if you can't be the one to finish the work, others have eyes on it, and access to the latest code changes.
 
 **Pull Requests should be small as possible**
+
 If you're working on something big, consider splitting it in multiple PRs. If that's not possible, aim to split your commits logically, with meaningful commit messages.
 
 **Address `TODOs`**
+
 If there are `TODO`s in the changed files, even if they were there before you started your work: it's your responsability to check they have a chance to get addressed. 
 
 If they aren't as urgent or related to the original ticket, they don't need to be addressed in your PR (and probably shouldn't be). But every `TODO` should have a Github issue linked, so create one and add its link as a comment if it's not the case. Ensure it's on the team's radar if it's a bigger piece of work. 
