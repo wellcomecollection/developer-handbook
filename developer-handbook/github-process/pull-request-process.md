@@ -39,6 +39,6 @@ Ask yourself:
   - Do they cover appropriate boundary conditions? (tests tend to cover what you want to happen, but should also cover what happens when the input is "wrong")
   - Do the tests tell a story? Are they easily readable?
 - Does any external documentation need updating based on your changes. If so, ensure you link to them in the description.
-- If I code review myself, reading file changes as if you were code reviewing a colleague; what would you point out if it was the other way around? 
+- Read file changes as if you were code reviewing a colleague; what would you point out if it was the other way around? 
 
-Once that's all done, and all automated tests have passed, then mark your PR as "Ready for review". That should automatically assign the CODEOWNER team to the PR, but feel free to tag specific people as well.
+Once that's all done, and all automated tests have passed, then mark your PR as "Ready for review". That should automatically assign the `CODEOWNERS` team to the PR, but feel free to tag specific people as well.

@@ -18,7 +18,7 @@ As a team, we operate in a very friendly, trusted, no-blame culture. The nature 
 
 That's why we hope documenting our standards for both pull request and code review processes will help in strengthening our confidence and interpretation of them. We also hope it helps empower new joiners in tackling their first code reviews, or submitting their first feature.
 
-We're approaching this from a place of believing code review to be an excellent a learning tool. Both for the submitter, who benefits from suggestions on their PR, but also for the reviewer. It's a prime place to ask questions, and learn from the submitter themselves.
+We're approaching this from a place of believing code review to be an excellent learning tool. Both for the submitter, who benefits from suggestions on their PR, but also for the reviewer. It's a prime place to ask questions, and learn from the submitter themselves.
 
 So have a look through, and feel free to submit changes. In order:
 - [Pull request creation](./pull-request-process.md)

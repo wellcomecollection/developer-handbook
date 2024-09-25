@@ -7,7 +7,7 @@ Your Pull Request was reviewed by a colleague (or a few colleagues, which is gre
 
 - React or reply to every comment that was left, even if it's just "acknowledged" or "done", or an emoji reaction. The person that left it thought it was worth saying something, it's nice to acknowledge it.
 
-- The owner of the PR can "resolve" comments after commenting "done" if they are small things like typos. For bigger changes than that, the responsibility of resolving should be passed on the the reviewer as they can use it to confirm the changes are inline with what they'd suggested.
+- The owner of the PR can "resolve" comments after commenting "done" if they are small things like typos. For bigger changes than that, the responsibility of resolving should be passed on to the reviewer as they can use it to confirm the changes are inline with what they'd suggested.
 
 - If some comments/suggestions need more discussion, switch to Slack or a call, but ensure you document the outcome in the PR for legacy's sake. If there's a Slack conversation, link it too.
 
