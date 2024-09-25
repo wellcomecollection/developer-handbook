@@ -24,6 +24,7 @@ You've been assigned a Pull Request to review, and you want to get started.
 	- Edge cases
 	- Leftovers from development, (e.g. `console.log`, addressed `TODO`s)
 	- Typos!
+	- Do the tests cover all cases? Do they actually test what they say they are testing?
 
 - Ensure you follow the "How to test" section, and run your own tests on top of it if you can think of other useful ones.
 

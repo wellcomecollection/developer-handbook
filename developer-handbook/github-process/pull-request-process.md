@@ -4,12 +4,12 @@ Here are recommendations to consider from the moment you create a new branch to 
 
 ## Pre-creation considerations
 
-**Consider creating your Pull Request when you're 30-50% through**
-_If it's a big piece_, consider creating your PR when you're 30-50% through. Create it as a draft, so no one gets notified of every commit. 
+**Consider creating your Pull Request as soon as you can**
+Consider creating your Pull Request as soon as possible. Think of PRs less as validation of work done and more as visibility of work in progress. The description ideally offers context as to why the work is being done as well as explaining how the solution was decided on, which can be very helpful to reviewers. Create it as a draft, so no one gets notified of every commit.
 
-This will let others gain some familiarity with the code changes, and might allow them to flag things in advance. 
+This will also let others gain some familiarity with the code changes, and might allow them to flag things in advance. 
 
-This also ensures that the lottery factor isn't a problem; if you can't be the one to finish the work, others have eyes on it.
+Another important aspect of this is that it ensures that the lottery factor isn't a problem; if you can't be the one to finish the work, others have eyes on it, and access to the latest code changes.
 
 **Pull Requests should be small as possible**
 If you're working on something big, consider splitting it in multiple PRs. If that's not possible, aim to split your commits logically, with meaningful commit messages.
@@ -31,7 +31,10 @@ If useful, leave comments throughout the code before making it "Ready for review
 To bring attention to anything important or special, you can also add formatted notices, such as tips and alerts by using [GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts).
 
 Ask yourself:
-- Would new tests be relevant? If so, add them.
+- Would new tests be relevant? If so, add them:
+  - Do they adequately reflect the questions asked in the ticket?
+  - Do they cover appropriate boundary conditions? (tests tend to cover what you want to happen, but should also cover what happens when the input is "wrong")
+  - Do the tests tell a story? Are they easily readable?
 - Does any external documentation need updating based on your changes. If so, ensure you link to them in the description.
 - If I code review myself, reading file changes as if you were code reviewing a colleague; what would you point out if it was the other way around? 
 
