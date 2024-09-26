@@ -18,9 +18,14 @@ If you're working on something big, consider splitting it in multiple PRs. If th
 
 **Address `TODO`s**
 
-If there are `TODO`s in the changed files, even if they were there before you started your work: it's your responsability to check they have a chance to get addressed. 
+Avoid adding any `TODO` at all to `main`. If they aren't as urgent or related to the original ticket, they don't need to be addressed in your PR (and probably shouldn't be). Either:
+- Create a ticket to do the work that can be prioritised. Then raise it in Slack if it's something to bring up to the next planning/ensure it's on the team's radar if it's a bigger piece of work.
+or
+- Fix the issue before merging
 
-If they aren't as urgent or related to the original ticket, they don't need to be addressed in your PR (and probably shouldn't be). But every `TODO` should have a Github issue linked, so create one and add its link as a comment if it's not the case. Ensure it's on the team's radar if it's a bigger piece of work. 
+Add a comment describing the peculiarity or optimisation for context for the next person to read without implying the next person should fix it. In this context, you could link to the GitHub issue. 
+
+If there are pre-existing `TODO`s in files, please check they have a ticket in the backlog, and therefore a chance to get addressed, then tidy it up (again, we're aiming to be rid of `TODO` comments in `main`, but comments to explain quirky looking logic can stay). 
 
 ## Pull Request creation considerations
 A pull request should have a clear description with:
