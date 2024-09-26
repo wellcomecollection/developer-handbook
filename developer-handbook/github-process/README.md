@@ -14,6 +14,7 @@ Projects, Issues & PRs overlap in GitHub, here is how we think about them:
 * Github Projects contain Issues _or_ PRs which transition through defined states towards _done_.
 
 ## Processes 
+
 As a team, we operate in a very friendly, trusted, no-blame culture. The nature of code review can sometimes make this feel a little bit difficult, especially if you're a new joiner.
 
 That's why we hope documenting our standards for both pull request and code review processes will help in strengthening our confidence and interpretation of them. We also hope it helps empower new joiners in tackling their first code reviews, or submitting their first feature.
