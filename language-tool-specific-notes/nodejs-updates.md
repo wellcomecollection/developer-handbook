@@ -41,7 +41,7 @@ We aim to stay up-to-date with the most recent ('active') LTS (long-term support
     aws lambda update-function-code \
       --function-name content-pipeline-<live-pipeline-date> \
       --s3-bucket wellcomecollection-content-api-packages \
-      --s3-key content-pipeline-2023-03-24/ref.<test-nodexx-upgrade>.zip 
+      --s3-key content-pipeline-<live-pipeline-date>/ref.<test-nodexx-upgrade>.zip 
       // replace <test-nodexx-upgrade> with whatever value you set above in the upload
     ```
 
