@@ -1,13 +1,4 @@
----
-description: >-
-  Instructions for updating Node versions for apps in the wellcomecollection.org
-  repo
----
-
-# NodeJS updates
-
-We aim to stay up-to-date with the most recent ('active') LTS (long-term support) version of Node wherever possible.
-
+# Upgrading NodeJS in wellcomecollection.org and the Content API
 1. Choose the Active LTS NodeJS version from the [release schedule](https://nodejs.org/en/about/previous-releases)
 2. Choose an appropriate Docker image running this version of Node – `bookworm-slim` is probably a good choice because `bookworm` means it will run likely run on a supported version of Debian until at least 2028 and `slim` means it contains everything required for a functional Node environment and nothing else
 3. Change this Docker version in the appropriate `Dockerfile`(s)
