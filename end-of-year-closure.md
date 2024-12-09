@@ -18,10 +18,16 @@ This does mean we might have a rocky period in January, when we deploy everythin
 
 This includes:
 
-* the display of opening times on the website
-* the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/catalogue/docs/turn-off-requesting.md), but we'd rather not)
+* the display of opening times on the website\
+  The Editorial team is responsible for updating and publishing "modified opening times" in Prismic for the Café, Shop, Library and Galleries & Reading room.  Once this is done, the website should display the exceptional closure days.
+* the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/docs/turn-off-requesting.md), but we'd rather not)
+  * Date options for on-site items depend on the Library opening times (see above)
+  * Date options for off-site (Deepstore) items depend on a separate (Deepstore) Collection Venue type in Prismic. The Digital team's Delivery Manager is responsible for updating and publishing Deepstore "modified opening times". Sarah Bird (Collection Storage Manager) can confirm Deepstore exceptional closures. &#x20;
+* NOTE on the above: Deepstore orders are managed manually by the LE\&E team and made on average once a week at their discretion. As of December 2024 we set the Deepstore venue in Prismic to be closed the week before the library closes, and until the library reopens in January.&#x20;
 
-If you’re running the website locally, you can [make the front-end code think it’s a different date](https://github.com/wellcomecollection/wellcomecollection.org/blob/9f50768da9c8fb7029985e16b16679056c549431/common/utils/dates.ts#L4-L19), so you can see how it will behave during the closure. You can check it's going to behave correctly, and check it matches the expectations of staff who’ll be working during the closure (e.g. see these [screenshots of the item picker](https://github.com/wellcomecollection/wellcomecollection.org/issues/8976) in the Christmas 2022 closure).
+Checking that the date picker is going to behave correctly during the closure:
+
+* Once the Modified opening times have been updated in Prismic, use `api/scripts/holiday_closure_test.ts` in the content-api repo to check what dates will be displayed in the date picker dropdown.&#x20;
 
 ## **Turn off services that won’t be used**
 
