@@ -20,7 +20,7 @@ We use [Github projects](https://github.com/orgs/wellcomecollection/projects) to
 
 * [Prismic linting report](https://dash.wellcomecollection.org/prismic-linting/): This is for our Editorial team to be aware of various linting errors and warning in Prismic, our CMS. The script that is run is owned by us and more linting rules can be added by devs [in our codebase](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/prismic-model/lintPrismicData.ts).
 * [pa11y report](https://dash.wellcomecollection.org/pa11y): [Pa11y](https://pa11y.org/) is a third party package that tests specified pages against WCAG standards. Find out more in [our README file](https://github.com/wellcomecollection/wellcomecollection.org/tree/main/pa11y).
-* Toggles: See [Toggles page](https://app.gitbook.com/s/7ftXlBv9uu465I0Z76rS/toggles-feature-flags).
+* Toggles: See [Toggles page](broken-reference).
 
 ### Code base
 

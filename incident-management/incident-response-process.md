@@ -72,5 +72,5 @@ Any security incidents should be reported to the Head of Information Security.
 
 ### See also
 
-* [Incident retrospectives](https://app.gitbook.com/s/7ftXlBv9uu465I0Z76rS/planning#incident-retrospectives) in "How we work"
-* Our [write-ups of previous incidents](https://github.com/wellcomecollection/docs/tree/main/incident\_retros) on GitHub
+* [Incident retrospectives](broken-reference) in "How we work"
+* Our [write-ups of previous incidents](https://github.com/wellcomecollection/docs/tree/main/incident_retros) on GitHub

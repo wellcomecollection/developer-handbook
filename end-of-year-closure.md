@@ -23,9 +23,16 @@ This includes:
 * the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/docs/turn-off-requesting.md), but we'd rather not)
   * Date options for on-site items depend on the Library opening times (see above)
   * Date options for off-site (Deepstore) items depend on a separate (Deepstore) Collection Venue type in Prismic. The Digital team's Delivery Manager is responsible for updating and publishing Deepstore "modified opening times". Sarah Bird (Collection Storage Manager) can confirm Deepstore exceptional closures. &#x20;
+  *
+
+      <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 * NOTE on the above: Deepstore orders are managed manually by the LE\&E team and made on average once a week at their discretion. As of December 2024 we set the Deepstore venue in Prismic to be closed the week before the library closes, and until the library reopens in January.&#x20;
 
-Checking that the date picker is going to behave correctly during the closure:
+
+
+10/3/2025 NP/RK/AG agreed this doesn't need to be checked every closure as this is expected to work correctly
+
+Experience Team checking that the date picker is going to behave correctly during the closure:
 
 * Once the Modified opening times have been updated in Prismic, use `api/scripts/holiday_closure_test.ts` in the content-api repo to check what dates will be displayed in the date picker dropdown.&#x20;
 
