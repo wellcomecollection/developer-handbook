@@ -23,6 +23,7 @@ This includes:
 * the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/docs/turn-off-requesting.md), but we'd rather not)
   * Date options for on-site items depend on the Library opening times (see above)
   * Date options for off-site (Deepstore) items depend on a separate (Deepstore) Collection Venue type in Prismic. The Digital team's Delivery Manager is responsible for updating and publishing Deepstore "modified opening times". Sarah Bird (Collection Storage Manager) can confirm Deepstore exceptional closures. &#x20;
+  * [https://wellcomecollection.prismic.io/builder/pages/ZlnoNRIAACAAJsBr?s=published\&section=Modified+opening+times](https://wellcomecollection.prismic.io/builder/pages/ZlnoNRIAACAAJsBr?s=published\&section=Modified+opening+times)
   *
 
       <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
