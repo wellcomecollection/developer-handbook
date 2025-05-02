@@ -16,6 +16,14 @@ We have **Permanent** and **Experimental** toggles, as you can see. Permanent on
 
 Turning a toggle **ON** will make that feature available to **you only,** as it sets a cookie in your browser that our code looks for - so if you change browser or clear your cookies, you'll have to reselect it for the feature to be available. You can then turn it back **OFF** if you want to compare. The cookies work by default in both the prod and the staging environment, unless we specify otherwise. If any _are_ specified, they'll be in the "**Stage**" section on the dashboard.
 
+We can share links that turn toggles on and off:
+
+On: [https://dash.wellcomecollection.org/toggles/?enableToggle=newThemePages](https://dash.wellcomecollection.org/toggles/?enableToggle=newThemePages)&#x20;
+
+Off: [https://dash.wellcomecollection.org/toggles/?disableToggle=newThemePages](https://dash.wellcomecollection.org/toggles/?disableToggle=newThemePages)
+
+The id for the toggle can be found at [https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts)&#x20;
+
 We can run a script that turns these toggle **ON** for _the wider public_, which we'll usually do when the feature is ready for delivery but we still want to be able to turn it off quickly should anything go wrong, by rerunning the script and reverting its effect. You can find out their public status by looking here:
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7ftXlBv9uu465I0Z76rS%2Fuploads%2F4uDzHHKcVKxn6psoicWT%2Fimage.png?alt=media&#x26;token=f478b4c7-ec9b-43d2-be30-047ceebe0bf6" alt=""><figcaption><p>Public status is individual to each toggle</p></figcaption></figure>
