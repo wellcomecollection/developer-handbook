@@ -37,3 +37,4 @@ terraform apply terraform.plan
 * Check `www-stage` and verify the test cookie (`toggle_someToggleId`) is set
 * Check the data is being sent to GA (either `someToggleId` or `!someToggleId`). You should initially be able to see the toggles dataLayer variable being set (`DLV - Toggles`) in GTM, then this data should get sent to GA as a custom dimension (note you might not be able to see this until the next day)
 * Update [`locals.tf`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/locals.tf) with values from previous terraform and re-run the terraform steps above to get the changes in to production
+* Use the toggle to conditionally serve different UI in the same way as you would for [feature flags](../../developer-handbook/front-end/toggles-feature-flags.md)
