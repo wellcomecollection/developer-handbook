@@ -32,6 +32,8 @@ We can run a script that turns these toggle **ON** for _the wider public_, which
 
 **Test** toggles are used, in conjunction with a [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html), to facilitate A/B testing. Creating a toggle of type 'test' and adding it to the dashboard ensures that the status of the toggle gets sent to GA alongside event data (so we can analyse the impact of the toggled code) and allows people to opt in and out of the test. The [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is used to split traffic 50/50 by setting a cookie value for the toggle automatically when web pages are viewed.
 
+Steps to create an A/B test are available [here](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/README.md#steps-to-create-an-ab-test).
+
 ### Note about 404 pages and toggles
 
 Another thing to note is **the yellow box on the 404 pages**. If you encounter a 404 page and have toggles enabled, it'll list which ones so you can try disabling them to see if it fixes it or not. It was added as it usually is an issue with the "Staging API" toggle, so make sure to confirm it's not what causes the issue.

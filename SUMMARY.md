@@ -12,7 +12,6 @@
   * [Front-end](developer-handbook/front-end/README.md)
     * [Front-end Principles](developer-handbook/front-end/front-end-principles.md)
     * [Toggles/Feature Flags](developer-handbook/front-end/toggles-feature-flags.md)
-    * [A/B testing](readme/front-end/a-b-testing.md)
     * [URLs on wellcomecollection.org](developer-handbook/front-end/urls-on-wellcomecollection.org.md)
     * [URL Parameters strategy](developer-handbook/front-end/url-parameters-strategy.md)
     * [Styling: rules of thumb](developer-handbook/front-end/styling-rules-of-thumb.md)
