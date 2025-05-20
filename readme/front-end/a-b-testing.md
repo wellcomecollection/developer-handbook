@@ -1,12 +1,10 @@
----
-description: >-
-  A/B tests can be created using special variants of the <a
-  href="https://app.gitbook.com/o/-LumfFcEMKx4gYXKAZTQ/s/DPDDj27NI2F2kPukWrC1/~/changes/75/readme/front-end/toggles-feature-flags">toggles</a>
----
-
 # A/B testing
 
 ### Steps to create an A/B test
+
+A/B tests can be created using special variants of the [toggles](https://app.gitbook.com/o/-LumfFcEMKx4gYXKAZTQ/s/DPDDj27NI2F2kPukWrC1/~/changes/75/readme/front-end/toggles-feature-flags).
+
+
 
 * Add a test object to [`toggler.ts`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge_lambdas/src/toggler.ts) and add an equivalent test object with the same `id` to [`toggles.ts`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts) :
 
