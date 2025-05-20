@@ -32,6 +32,41 @@ We can run a script that turns these toggle **ON** for _the wider public_, which
 
 **Test** toggles are used, in conjunction with a [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html), to facilitate A/B testing. Creating a toggle of type 'test' and adding it to the dashboard ensures that the status of the toggle gets sent to GA alongside event data (so we can analyse the impact of the toggled code) and allows people to opt in and out of the test. The [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is used to split traffic 50/50 by setting a cookie value for the toggle automatically when web pages are viewed.
 
+### Steps to create an A/B test
+
+* Add a test object to [`toggler.ts`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/edge_lambdas/src/toggler.ts) and add an equivalent test object with the same `id` to [`toggles.ts`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts) :
+
+```
+{
+  id: 'someToggleId',
+  title: 'New subject tags on works pages',
+  range: [0, SOME_PERCENTAGE],
+  when: request => {
+    return !!request.uri.match(/SOME_REGEX/);
+  },
+}
+```
+
+* Update and upload the lambda deployment package:
+
+```
+docker compose build edge_lambdas
+AWS_PROFILE=experience-developer docker compose run edge_lambdas yarn deploy
+```
+
+* deploy the lambda:
+
+```
+terraform plan -out=terraform.plan
+terraform apply terraform.plan
+```
+
+* Check `www-stage` and verify the test cookie (`toggle_someToggleId`) is set.
+* Check the data is being sent to GA (either `someToggleId` or `!someToggleId`). You should initially be able to see the toggles dataLayer variable being set (`DLV - Toggles`) in GTM, then this data should get sent to GA as a custom dimension (note you might not be able to see this until the next day).
+* Update `locals.tf` with values from previous terraform and re-run the terraform steps above to get the changes in to production
+
+### Note about 404 pages and toggles
+
 Another thing to note is **the yellow box on the 404 pages**. If you encounter a 404 page and have toggles enabled, it'll list which ones so you can try disabling them to see if it fixes it or not. It was added as it usually is an issue with the "Staging API" toggle, so make sure to confirm it's not what causes the issue.
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7ftXlBv9uu465I0Z76rS%2Fuploads%2FbQb8mGJEqbkpAUEAYPGE%2Fimage.png?alt=media&#x26;token=83e7c685-ff9c-4f6b-b53a-4823c0a40dc9" alt=""><figcaption><p>404 page with a yellow box indicating which toggles are active for the user</p></figcaption></figure>
