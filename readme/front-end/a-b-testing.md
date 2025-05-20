@@ -33,6 +33,7 @@ terraform plan -out=terraform.plan
 terraform apply terraform.plan
 ```
 
-* Check `www-stage` and verify the test cookie (`toggle_someToggleId`) is set.
-* Check the data is being sent to GA (either `someToggleId` or `!someToggleId`). You should initially be able to see the toggles dataLayer variable being set (`DLV - Toggles`) in GTM, then this data should get sent to GA as a custom dimension (note you might not be able to see this until the next day).
-* Update `locals.tf` with values from previous terraform and re-run the terraform steps above to get the changes in to production
+* Make a note of the `edge_lambda_request_version` and `edge_lambda_response_version` numbers in the terminal resulting from the terraform command
+* Check `www-stage` and verify the test cookie (`toggle_someToggleId`) is set
+* Check the data is being sent to GA (either `someToggleId` or `!someToggleId`). You should initially be able to see the toggles dataLayer variable being set (`DLV - Toggles`) in GTM, then this data should get sent to GA as a custom dimension (note you might not be able to see this until the next day)
+* Update [`locals.tf`](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/locals.tf) with values from previous terraform and re-run the terraform steps above to get the changes in to production
