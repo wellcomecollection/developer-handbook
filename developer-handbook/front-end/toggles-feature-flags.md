@@ -24,7 +24,7 @@ Off: [https://dash.wellcomecollection.org/toggles/?disableToggle=newThemePages](
 
 The id for the toggle can be found at [https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/webapp/toggles.ts)&#x20;
 
-We can run a script that turns these toggle **ON** for _the wider public_, which we'll usually do when the feature is ready for delivery but we still want to be able to turn it off quickly should anything go wrong, by rerunning the script and reverting its effect. You can find out their public status by looking here:
+We can run a script that turns these toggle **ON** for _the wider public_, which we'll usually do when the feature is ready for delivery\* but we still want to be able to turn it off quickly should anything go wrong, by rerunning the script and reverting its effect. You can find out their public status by looking here:
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7ftXlBv9uu465I0Z76rS%2Fuploads%2F4uDzHHKcVKxn6psoicWT%2Fimage.png?alt=media&#x26;token=f478b4c7-ec9b-43d2-be30-047ceebe0bf6" alt=""><figcaption><p>Public status is individual to each toggle</p></figcaption></figure>
 
@@ -34,8 +34,16 @@ We can run a script that turns these toggle **ON** for _the wider public_, which
 
 Steps to create an A/B test are available [here](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/README.md#steps-to-create-an-ab-test).
 
+\*Before turning a toggle ON (making it available to the wider public), we should make sure of a few things:
+
+* [ ] Approved by PM
+* [ ] Approved by internal stakeholder (design, analytics)
+* [ ] e2es have passed with this particular toggle turned on
+
+Only once all these conditions are satisfied should we run the script.
+
 ### Note about 404 pages and toggles
 
-Another thing to note is **the yellow box on the 404 pages**. If you encounter a 404 page and have toggles enabled, it'll list which ones so you can try disabling them to see if it fixes it or not. It was added as it usually is an issue with the "Staging API" toggle, so make sure to confirm it's not what causes the issue.
+A thing to note is **the yellow box on the 404 pages**. If you encounter a 404 page and have toggles enabled, it'll list which ones so you can try disabling them to see if it fixes it or not. It was added as it usually is an issue with the "Staging API" toggle, so make sure to confirm it's not what causes the issue.
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7ftXlBv9uu465I0Z76rS%2Fuploads%2FbQb8mGJEqbkpAUEAYPGE%2Fimage.png?alt=media&#x26;token=83e7c685-ff9c-4f6b-b53a-4823c0a40dc9" alt=""><figcaption><p>404 page with a yellow box indicating which toggles are active for the user</p></figcaption></figure>
