@@ -30,7 +30,7 @@
 * [EC2: tagging short-lived instances with a name/date](language-tool-specific-notes/ec2-tagging-short-lived-instances-with-a-name-date.md)
 * [NodeJS updates](language-tool-specific-notes/nodejs-updates/index.md)
   * [Auth0](language-tool-specific-notes/nodejs-updates/auth0.md)
-  * [wc.org and Content Api](language-tool-specific-notes/nodejs-updates/wc.org.md)
+  * [wc.org and Content API](language-tool-specific-notes/nodejs-updates/wc.org.md)
   * [Upgrading NodeJS for CloudFront Lambda@Edge](language-tool-specific-notes/index/upgrading-nodejs-for-cloudfront-lambda-edge.md)
 
 ***
