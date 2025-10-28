@@ -13,6 +13,8 @@
 11. Consider this an opportunity to upgrade packages that support the new version of Node so they don’t fall behind. It doesn’t need to be done in the same PR, but should be considered as a second step
 12. Create PR including clear description of steps for how to run and test for reviewers. For side-apps (e.g. `dash` and `pa11y`) consider adding their build jobs to `.buildkite/pipeline.yml` to test the build on there. This can then be used as proof it should work. If you do this, remember to remove it before merging
 
+### Content API / Lambdas
+
 (\*) Test Nodejs upgrade for the content-api lambdas by manually deploying your changes and terraforming the runtime upgrade, all from your PR branch. This approach allows you to quickly and easily revert your changes in case something goes wrong, as opposed to merging your changes to `main` and having to depend on the CI pipeline to put everything right again.
 
 *   package the lambdas, upload to S3 and deploy
