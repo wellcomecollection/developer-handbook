@@ -32,6 +32,7 @@
   * [Auth0](language-tool-specific-notes/nodejs-updates/auth0.md)
   * [wc.org and Content API](language-tool-specific-notes/nodejs-updates/wc.org.md)
   * [Upgrading NodeJS for CloudFront Lambda@Edge](language-tool-specific-notes/index/upgrading-nodejs-for-cloudfront-lambda-edge.md)
+  * [Playwright NodeJS updates](language-tool-specific-notes/index/playwright-nodejs-updates.md)
 
 ***
 
