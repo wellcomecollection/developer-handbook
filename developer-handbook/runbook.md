@@ -42,11 +42,11 @@ If the error was from CloudWatch, we store the logs locally in S3, go into Athen
 
 ## Testing
 
-### Updown.io
+### LogicMonitor
 
-[Updown](https://updown.io/) is a tool that consistently monitors specified pages' availabilities and performances. [You may access our dashboard here](https://updown.io/p/1bj95). When a page goes down, an alert is sent in either #wc-platform-alerts or #wc-platform (or both), as well as emails to digital@.&#x20;
+[LogicMonitor](https://www.logicmonitor.com/) is the shared Wellcome platform we use for uptime and website monitoring. [The website monitors are visible in the LogicMonitor portal](https://wellcome.logicmonitor.com/santaba/uiv4/websites) (SSO required). All Wellcome users have read access; if you need write access via the UI, raise a ServiceNow request for your c_ (cloud) account.
 
-Devs can find more information in [the project's README file](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/updown/README.md), on how to add a page, which should be done when a new page type gets released.
+The infrastructure for these monitors is managed in Terraform under the [`monitoring_logicmonitor` directory of the wellcome-devops repository](https://github.com/wellcometrust/wellcome-devops/tree/main/infrastructure/monitoring_logicmonitor). Infrastructure changes require a TFVARS file, which you can obtain from a lead engineer. New page types should be added through this Terraform configuration when they are released.
 
 ### Cardigan/Storybook
 
