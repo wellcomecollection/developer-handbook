@@ -16,6 +16,8 @@ This does mean we might have a rocky period in January, when we deploy everythin
 
 ## Test any date-sensitive services beforehand
 
+10/3/2025 NP/RK/AG agreed this doesn't need to be checked every closure as this is expected to work correctly
+
 This includes:
 
 * the display of opening times on the website\
@@ -28,10 +30,6 @@ This includes:
 
       <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 * NOTE on the above: Deepstore orders are managed manually by the LE\&E team and made on average once a week at their discretion. As of December 2024 we set the Deepstore venue in Prismic to be closed the week before the library closes, and until the library reopens in January.&#x20;
-
-
-
-10/3/2025 NP/RK/AG agreed this doesn't need to be checked every closure as this is expected to work correctly
 
 Experience Team checking that the date picker is going to behave correctly during the closure:
 
