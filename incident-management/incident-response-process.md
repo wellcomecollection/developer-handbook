@@ -21,7 +21,7 @@ An incident must be worked on as soon as possible to mitigate loss of service to
 
 ### Reporting an incident
 
-An potential incident might be reported in lots of ways (tweet from a user, report from a developer) but should be funneled to a delivery manager to assess the damage and decide whether to call the issue an "incident" or prioritise work via other channels.
+A potential incident might be reported in lots of ways (tweet from a user, report from a developer) but should be funneled to a delivery manager to assess the damage and decide whether to call the issue an "incident" or prioritise work via other channels.
 
 There are some situations where a person decides that it is best to initiate the protocol themselves without a delivery manager at first. When this happens, ensure that the delivery manager is informed that this has happened. Some examples of where this might happen
 
