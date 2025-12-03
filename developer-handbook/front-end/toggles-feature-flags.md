@@ -37,7 +37,9 @@ Steps to create an A/B test are available [here](https://github.com/wellcomecoll
 \*Before turning a toggle ON (making it available to the wider public), we should make sure of a few things:
 
 * [ ] Approved by PM
-* [ ] Approved by internal stakeholder (design, analytics)
+* [ ] Approved by any other internal stakeholder
+* [ ] Approved by Design
+* [ ] Analytics plan done and approved by Digital Analyst
 * [ ] e2es have passed with this particular toggle turned on
 
 Only once all these conditions are satisfied should we run the script.
