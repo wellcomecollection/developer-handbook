@@ -34,7 +34,9 @@ We can run a script that turns these toggle **ON** for _the wider public_, which
 
 Steps to create an A/B test are available [here](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/README.md#steps-to-create-an-ab-test).
 
-\*Before turning a toggle ON (making it available to the wider public), we should make sure of a few things:
+### Before turning a toggle ON
+
+(making it available to the wider public), we should make sure of a few things:
 
 * [ ] Approved by PM
 * [ ] Approved by any other internal stakeholder
