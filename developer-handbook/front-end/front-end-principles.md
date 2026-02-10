@@ -4,7 +4,7 @@ description: >-
   Wellcome Collection website.
 ---
 
-# Principles
+# Front-end Principles
 
 ### Index
 
@@ -69,16 +69,18 @@ Based on data from 4th June 2022 - 4th September 2022
 
 **We will manually test the site on the following browsers**
 
-| Browser                     | Support Level |
-| --------------------------- | ------------- |
-| Chrome (latest 2 versions)  | Full          |
-| Safari (latest 2 versions)  | Full          |
-| Android Webview             | Full          |
-| Firefox (latest 2 versions) | Full          |
-| Edge (latest 2 versions)    | Full          |
-| Samsung Internet            | Full          |
-| Safari (in-app)             | Full          |
-| Opera Mini (extreme mode)   | Basic         |
+| Browser                      | Support Level |
+| ---------------------------- | ------------- |
+| Chrome (latest 2 versions)   | Full          |
+| Safari (latest 2 versions\*) | Full\*        |
+| Android Webview              | Full          |
+| Firefox (latest 2 versions)  | Full          |
+| Edge (latest 2 versions)     | Full          |
+| Samsung Internet             | Full          |
+| Safari (in-app)              | Full          |
+| Opera Mini (extreme mode)    | Basic         |
+
+\*Safari releasing new [major versions once per year](https://developer.apple.com/documentation/safari-release-notes), it might be that we treat bugs unique to it on a case-by-case basis depending on usage and bug level.
 
 Support is divided into 2 categories, Basic and Full.
 
