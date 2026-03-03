@@ -2,7 +2,7 @@
 
 We use Lambda@Edge with the [IIIF CloudFront distribution](https://github.com/wellcomecollection/platform-infrastructure/tree/main/cloudfront/iiif.wellcomecollection.org) to rewrite paths.
 
-The `cf_edge_dlcs_path_rewrite`lambda is versioned. The stage and test instances are set up in terraform to use whatever the latest version is. The production instance uses a hardcoded version that we update manually once we've tested the change in stage.\
+The `cf_edge_dlcs_path_rewrite` lambda is versioned. The stage and test instances are set up in terraform to use whatever the latest version is. The production instance uses a hardcoded version that we update manually once we've tested the change in stage.\
 See [https://github.com/wellcomecollection/platform-infrastructure/blob/main/cloudfront/iiif.wellcomecollection.org/terraform/locals.tf](https://github.com/wellcomecollection/platform-infrastructure/blob/main/cloudfront/iiif.wellcomecollection.org/terraform/locals.tf) for the qualified (ie. includes version) lambda ARNs.&#x20;
 
 * &#x20;Make any required code changes to the lambda code
