@@ -22,7 +22,7 @@ This includes:
 
 * the display of opening times on the website\
   The Editorial team is responsible for updating and publishing "modified opening times" in Prismic for the Café, Shop, Library and Galleries & Reading room.  Once this is done, the website should display the exceptional closure days.
-* the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/docs/turn-off-requesting.md), but we'd rather not)
+* the date picker for requesting items (we can [disable this if necessary](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/docs/turn-off-requesting.md), but we'd rather not; it switches off all requesting, not just for particular dates)
   * Date options for on-site items depend on the Library opening times (see above)
   * Date options for off-site (Deepstore) items depend on a separate (Deepstore) Collection Venue type in Prismic. The Digital team's Delivery Manager is responsible for updating and publishing Deepstore "modified opening times". Sarah Bird (Collection Storage Manager) can confirm Deepstore exceptional closures. &#x20;
   * [https://wellcomecollection.prismic.io/builder/pages/ZlnoNRIAACAAJsBr?s=published\&section=Modified+opening+times](https://wellcomecollection.prismic.io/builder/pages/ZlnoNRIAACAAJsBr?s=published\&section=Modified+opening+times)
