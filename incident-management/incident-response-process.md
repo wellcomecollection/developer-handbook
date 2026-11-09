@@ -32,9 +32,9 @@ There are some situations where a person decides that it is best to initiate the
 
 #### Incident lead
 
-When it's clear an incident has occured the person responsible is the most senior developer who is available to respond. Who that is can be worked out via Slack in the #wc-platform channel. This person is now the "incident lead" until they pass that role on explicitly to someone else. It is not expected that the most senior developer lead on all incidents, but rather the role should be handed to the person best placed to lead on a solution.
+When it's clear an incident has occured the person responsible is the most senior developer who is available to respond. Who that is can be worked out via Slack in the #wc-digital-platform channel. This person is now the "incident lead" until they pass that role on explicitly to someone else. It is not expected that the most senior developer lead on all incidents, but rather the role should be handed to the person best placed to lead on a solution.
 
-The incident lead should announce in #wc-platform that an incident has occured, ensuring that the relevant delivery manager is aware of the situation (and agrees to continue where appropriate). Folk should join #wc-incident-response and the lead should post a description of the problem and what is known at that time.
+The incident lead should announce in #wc-digital-platform that an incident has occured, ensuring that the relevant delivery manager is aware of the situation (and agrees to continue where appropriate). Folk should join #wc-incident-response and the lead should post a description of the problem and what is known at that time.
 
 The incident lead should pull in whoever they need to understand and resolve the problem. All those involved in resolving the incident should report their progress in the shared incident channel. When someone is no longer able to assist or has stopped helping that should also be made clear.
 
