@@ -31,7 +31,7 @@ React to each alert so others can see where it stands without reading the thread
 
 ### How quickly to fix vulnerabilities
 
-The D&T Vulnerability Management Standard sets these timescales, counted from the date a vulnerability is classified:
+The D&T Vulnerability Management Standard sets these timescales, counted from the date a vulnerability is classified. The [Inspector README](https://github.com/wellcomecollection/platform-infrastructure/blob/main/inspector/README.md#dt-standards-and-processes) links it and D&T's other vulnerability and incident documents.
 
 | Severity | Fix within |
 |---|---|
@@ -53,7 +53,7 @@ Two kinds of alert are fixed or handed over on the day they arrive:
 
 GuardDuty findings, changes to our standard IAM roles, new IAM users or access keys, and reads of `admin/` secrets are often someone doing their job. Ask in the alert's thread whether it was expected, and tag the person if CloudTrail names them.
 
-If nobody confirms it on the same day, or it looks like a compromise, tag @platform in the thread and follow the [incident response process](incident-response-process.md). Discuss a suspected security incident in a private channel, and report it to the Head of Information Security, as that page says. Security is one of the exceptions in [out-of-hours support](out-of-hours-support.md).
+If nobody confirms it on the same day, or it looks like a compromise, tag @platform in the thread and follow the [incident response process](incident-response-process.md). If nobody on the team picks it up, go to the Digital Platform lead directly. Discuss a suspected security incident in a private channel, and report it to the Head of Information Security, as that page says. Information Security then handle it under D&T's incident response plan, which the [Inspector README](https://github.com/wellcomecollection/platform-infrastructure/blob/main/inspector/README.md#dt-standards-and-processes) links. Security is one of the exceptions in [out-of-hours support](out-of-hours-support.md).
 
 ### Findings owned by Digirati
 
