@@ -53,7 +53,7 @@ Two kinds of alert are fixed or handed over on the day they arrive:
 
 GuardDuty findings, changes to our standard IAM roles, new IAM users or access keys, and reads of `admin/` secrets are often someone doing their job. Ask in the alert's thread whether it was expected, and tag the person if CloudTrail names them.
 
-If nobody confirms it on the same day, or it looks like a compromise, raise it in #wc-platform and follow the [incident response process](incident-response-process.md). If nobody on the team picks it up, go to the Digital Platform lead directly. Discuss a suspected security incident in a private channel, and report it to the Head of Information Security, as that page says. Information Security then handle it under D&T's incident response plan, which the [Inspector README](https://github.com/wellcomecollection/platform-infrastructure/blob/main/inspector/README.md#dt-standards-and-processes) links. Security is one of the exceptions in [out-of-hours support](out-of-hours-support.md).
+If nobody confirms it on the same day, or it looks like a compromise, raise it in #wc-digital-platform and follow the [incident response process](incident-response-process.md). If nobody on the team picks it up, go to the Digital Platform lead directly. Discuss a suspected security incident in a private channel, and report it to the Head of Information Security, as that page says. Information Security then handle it under D&T's incident response plan, which the [Inspector README](https://github.com/wellcomecollection/platform-infrastructure/blob/main/inspector/README.md#dt-standards-and-processes) links. Security is one of the exceptions in [out-of-hours support](out-of-hours-support.md).
 
 ### Findings owned by Digirati
 
@@ -83,8 +83,8 @@ When a rule's review date comes round, either renew it with a new PR that restat
 
 ### Escalation
 
-* Tag the owning team named in the alert, or raise it in #wc-platform if there is none.
-* If you are unsure whether something is serious, ask in #wc-platform rather than waiting.
+* Tag the owning team named in the alert, or raise it in #wc-digital-platform if there is none.
+* If you are unsure whether something is serious, ask in #wc-digital-platform rather than waiting.
 * A likely compromise or data exposure goes to the [incident response process](incident-response-process.md).
 
 ### Further reading
