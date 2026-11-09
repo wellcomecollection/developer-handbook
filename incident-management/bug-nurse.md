@@ -61,7 +61,7 @@ Digirati run our IIIF services, some of them in their own AWS account. The real-
 
 ### The vulnerabilities day
 
-One day each sprint goes on vulnerabilities, as a child issue of wellcomecollection/platform#5796 assigned to that sprint's bug nurse. On that day:
+One day each sprint goes on vulnerabilities, as a child issue of the standing vulnerabilities issue in our internal infrastructure repository, assigned to that sprint's bug nurse. On that day:
 
 * Work through open Dependabot alerts and PRs, and the Inspector highs in the daily report.
 * Review the Inspector suppression rules and accepted risks whose review date falls in the sprint.
