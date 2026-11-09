@@ -8,6 +8,8 @@ Automated dependency updates built into GitHub
 
 Keeping our repository safe and secure by making sure the modules that we use are up to date
 
+Dependabot alerts are triaged by the bug nurse, as described in [Bug nurse](../incident-management/bug-nurse.md).
+
 ### How does it work?
 
 Following the configuration that we have set up in `[PROJECT_ROOT]/.github/dependabot.yml`, dependabot will run through the package.json files in our repositories, and check to see if there's an updated version of the package. If there is, it will create a pull request for the update.

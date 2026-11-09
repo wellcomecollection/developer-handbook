@@ -21,6 +21,7 @@
 
 * [Incident Response Process](incident-management/incident-response-process.md)
 * [Out-of-hours support](incident-management/out-of-hours-support.md)
+* [Bug nurse](incident-management/bug-nurse.md)
 
 ## Language/tool-specific notes
 
