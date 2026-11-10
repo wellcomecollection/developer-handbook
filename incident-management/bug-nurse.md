@@ -27,7 +27,7 @@ React to each alert so others can see where it stands without reading the thread
 
 * :eyes: (`eyes`) when you are looking at it
 * :white\_check\_mark: (`white_check_mark`) when it is handled, or ticketed with the issue linked in the thread
-* :recycle: (`recycle`) when it is a repeat of something already known, with a link to the earlier thread or issue
+* :link: (`link`) when it is a repeat of something already known, with a link to the earlier thread or issue
 
 ### How quickly to fix vulnerabilities
 
@@ -40,7 +40,7 @@ The D&T Vulnerability Management Standard sets these timescales, counted from th
 | Medium | 60 days |
 | Low | 90 days |
 
-Severity starts from the CVSS score (9.0 and above is critical, 7.0 to 8.9 high), but you can raise or lower it for our context, for example when the vulnerable code never runs or the resource is not reachable from the internet. Record the reason in the ticket or thread. The Inspector digest shows how long each critical has been open and marks it overdue after 14 days, so check criticals against the 7-day limit yourself.
+Severity starts from the CVSS score (9.0 and above is critical, 7.0 to 8.9 high), but you can raise or lower it for our context, for example when the vulnerable code never runs or the resource is not reachable from the internet. Record the reason in the ticket or thread. The Inspector digest shows how long each critical has been open and marks criticals overdue after 7 days and highs after 14.
 
 #### Same-day work
 
