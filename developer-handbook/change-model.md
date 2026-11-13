@@ -16,7 +16,7 @@ Every production change is one of three kinds. The names come from ITIL, the ser
 
 Most changes take this route:
 
-1. Open a pull request against `main` and fill in the headings of the pull request template.
+1. Open a pull request against `main` and fill in the headings of the [pull request template](https://github.com/wellcomecollection/.github/blob/main/PULL_REQUEST_TEMPLATE.md). Repositories with their own template carry the same headings.
 2. Get an approving review from someone other than you. Branch protection asks for one, and CODEOWNERS requests it from the owning team.
 3. Merge once CI has passed. Merging deploys to staging, where the service has one.
 4. Check the change on staging.
@@ -99,5 +99,6 @@ Backplane (internal), our developer portal, reports change failure rate from pro
 * [Change model ADR](https://github.com/wellcomecollection/docs/blob/main/adr/change_model.md)
 * [Rolling back a change](rollback.md)
 * [Pull request creation](github-process/pull-request-process.md)
+* [Pull request template](https://github.com/wellcomecollection/.github/blob/main/PULL_REQUEST_TEMPLATE.md)
 * [Post-code review process](github-process/post-code-review.md)
 * [Toggles and feature flags](front-end/toggles-feature-flags.md)
