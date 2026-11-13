@@ -9,13 +9,14 @@ See [https://github.com/wellcomecollection/platform-infrastructure/blob/main/clo
 
 This is vanilla Javascript so in all likelihood it'll work with the new runtime. If you do need to make some code changes, deploy first.&#x20;
 
-* Bump the runtime on the ["aws\_lambda\_function" "dlcs\_path\_rewrite"](https://github.com/wellcomecollection/platform-infrastructure/blob/main/cloudfront/iiif.wellcomecollection.org/terraform/lambda_dlcs_path_rewrite.tf)
-* `terraform plan` should show changes to the above lambda: `runtime` and `version`. The lambda is `publish = true` which means the runtime update automatically publishes a new version. Since the stage and test instances are using the latest version, the `lambda_arn`will also change for these instances.
-* `terraform apply`: the stage and test lambdas are now running with the updated runtime.
+Terraform is applied only from `main` after the pull request has merged (see the [change model](../../developer-handbook/change-model.md#terraform)), so this takes two PRs.
+
+* Bump the runtime on the ["aws\_lambda\_function" "dlcs\_path\_rewrite"](https://github.com/wellcomecollection/platform-infrastructure/blob/main/cloudfront/iiif.wellcomecollection.org/terraform/lambda_dlcs_path_rewrite.tf) in a first PR, and merge it once it is approved.
+* From an up-to-date `main`, `terraform plan` should show changes to the above lambda: `runtime` and `version`. The lambda is `publish = true` which means the runtime update automatically publishes a new version. Since the stage and test instances are using the latest version, the `lambda_arn`will also change for these instances. Production stays on its hardcoded version.
+* `terraform apply` from `main`: the stage and test lambdas are now running with the updated runtime.
 * Test&#x20;
-* In `locals.tf` change the `dlcs_path_rewrite_arn_prod`to end with the tested version.&#x20;
-* `terraform apply`
-* Don't forget to merge the last tf change to `main` !&#x20;
+* In a second PR, change the `dlcs_path_rewrite_arn_prod` in `locals.tf` to end with the tested version, and merge it once it is approved.
+* `terraform apply` from `main`.
 
 
 

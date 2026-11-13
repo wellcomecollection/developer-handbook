@@ -6,6 +6,8 @@
     * [Pull request creation](developer-handbook/github-process/pull-request-process.md)
     * [Code review considerations](developer-handbook/github-process/code-review-process.md)
     * [Post-code review process](developer-handbook/github-process/post-code-review.md)
+  * [Change model](developer-handbook/change-model.md)
+  * [Rolling back a change](developer-handbook/rollback.md)
   * [Monitoring strategy](developer-handbook/monitoring-strategy.md)
   * [Dependabot](developer-handbook/dependabot.md)
   * [Runbook](developer-handbook/runbook.md)
@@ -20,6 +22,7 @@
 ## Incident management
 
 * [Incident Response Process](incident-management/incident-response-process.md)
+* [Incident comms and escalation](incident-management/incident-comms-and-escalation.md)
 * [Out-of-hours support](incident-management/out-of-hours-support.md)
 * [Bug nurse](incident-management/bug-nurse.md)
 
