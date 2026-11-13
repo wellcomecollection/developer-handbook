@@ -2,8 +2,6 @@
 
 This page is how to make a production change day to day. The [change model ADR](https://github.com/wellcomecollection/docs/blob/main/adr/change_model.md) is the decision behind it: which routes a change can take, which record is the change record, and who holds change authority. It covers production changes to the services the digital platform team runs in the Wellcome Collection AWS accounts, including application code, Terraform and toggles.
 
-Lines marked _To be agreed_ are decisions the team has not made yet. They are listed in [Open decisions](#open-decisions).
-
 ### Kinds of change
 
 Every production change is one of three kinds. The names come from ITIL, the service management framework D&T used when they assessed us.
@@ -36,12 +34,26 @@ A standard change is a kind of change we have agreed in advance is low risk and 
 | Change | Procedure |
 |---|---|
 | A dependency update raised by Dependabot, with CI passing | [Dependabot](dependabot.md) |
-| Turning a toggle on for the public once its checklist is complete | [Toggles and feature flags](front-end/toggles-feature-flags.md#before-turning-a-toggle-on) |
-| Updating a WAF IP list, either through the WAF IP set updaters or by adding an address to a block list | [WAF IP set updaters](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/ip-updaters/README.md), and "Bot or scraper traffic slows or breaks the site" in the [website runbook](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/content/docs/runbook.md#bot-or-scraper-traffic-slows-or-breaks-the-site) |
-| Changing an ECS service's task count or an Elastic Cloud deployment's size within agreed bounds | The bounds are recorded in the service's runbook. _To be written: the bounds for each service._ |
+| Turning a toggle on for the public once its checklist is complete, through a pull request | [Toggles and feature flags](front-end/toggles-feature-flags.md#before-turning-a-toggle-on) |
+| Updating a WAF IP list or a block list through a pull request, either to the WAF IP set updaters or to add an address to a block list | [WAF IP set updaters](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/ip-updaters/README.md), and "Bot or scraper traffic slows or breaks the site" in the [website runbook](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/content/docs/runbook.md#bot-or-scraper-traffic-slows-or-breaks-the-site) |
+| Changing an ECS service's task count or an Elastic Cloud deployment's size within agreed bounds | [Scaling bounds](#scaling-bounds) below |
 | Publishing a Prismic content model change in the documented order | [Updating an existing custom type](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/prismic-model/README.md#updating-an-existing-custom-type) in the prismic-model README |
 
 To add or remove an entry, raise a pull request to the ADR. The lead engineer reviews the catalogue every quarter.
+
+Toggle flips and block list updates are code changes. They go through an issue and a pull request like any other change, and the merged pull request is their record.
+
+#### Scaling bounds
+
+You may raise an ECS service's task count to double its current production figure and bring it back down to it, and move an Elastic Cloud deployment one size step up and back. Anything beyond that is a normal change.
+
+The current production figures, as of 13 November 2026, are:
+
+| Service | Current figure |
+|---|---|
+| Website content app | 6 tasks |
+| Catalogue API search, items and concepts | 3 tasks each |
+| Catalogue Elasticsearch cluster | 4 GB per node |
 
 ### Turning on a front-end feature
 
@@ -53,7 +65,7 @@ Before you make a toggle public, complete the checklist on the [toggles page](fr
 * analytics plan done and approved by the Digital Analyst
 * e2es have passed with the toggle turned on
 
-Then run `yarn setDefaultValueFor --TOGGLE_ID=true`, as the [toggles README](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/README.md) describes. This changes what the public sees straight away, with no pull request. _To be agreed: where a public toggle change or a block list update is recorded._
+Then propose the flip in a pull request and get it reviewed like any other change. Once the pull request has merged, run `yarn setDefaultValueFor --TOGGLE_ID=true` from `main`, as the [toggles README](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/README.md) describes. The command changes what the public sees straight away, and the merged pull request is the record of the change.
 
 ### Emergency changes
 
@@ -76,18 +88,11 @@ To undo an apply, see [Rolling back a change](rollback.md#terraform).
 
 ### Fridays and bank holidays
 
-We try not to make risky changes on a Friday or ahead of a bank holiday weekend. This is an informal habit. It is not written down as a rule, and we have no formal change freeze (see [End-of-year closure](../end-of-year-closure.md)). It comes from two incidents. The [2024-05-13 retro](https://github.com/wellcomecollection/docs/blob/main/incident_retros/2024-05-13_prismic_slice_machine_migration.md) recorded a decision not to make changes ahead of a bank holiday weekend, and the [2026-06-05 retro](https://github.com/wellcomecollection/docs/blob/main/incident_retros/2026-06-05_registration.md) said the change should not have been made on a Friday.
-
-_To be agreed: whether this becomes a written rule, and if so what counts as risky._
+Avoid making a normal change on a Friday afternoon or before a bank holiday unless the lead engineer agrees. Standard and emergency changes are exempt. We have no formal change freeze (see [End-of-year closure](../end-of-year-closure.md)). The guidance comes from two incidents. The [2024-05-13 retro](https://github.com/wellcomecollection/docs/blob/main/incident_retros/2024-05-13_prismic_slice_machine_migration.md) recorded a decision not to make changes ahead of a bank holiday weekend, and the [2026-06-05 retro](https://github.com/wellcomecollection/docs/blob/main/incident_retros/2026-06-05_registration.md) said the change should not have been made on a Friday.
 
 ### Where changes are counted
 
 Backplane (internal), our developer portal, reports change failure rate from production deploys recorded as GitHub Deployments, and reads who owns each service from its `manifest.yml`. Look there rather than keeping a list here. Terraform applies, and deploys from repositories that don't create GitHub Deployments, are not counted.
-
-### Open decisions
-
-* Where a public toggle change or a block list update is recorded
-* Whether the Friday and bank holiday habit becomes a written rule
 
 ### Further reading
 
