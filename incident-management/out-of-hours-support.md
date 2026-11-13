@@ -1,8 +1,8 @@
 # Out-of-hours support
 
-As a general rule, we do **not** provide out-of-hours support for Wellcome Collection services.
+As a general rule, we support Wellcome Collection services during UK office hours (9am to 5pm on weekdays). Outside those hours, support is best effort. If a service goes down on a Sunday morning, it may stay down until we arrive in the office on Monday.
 
-We provide support during UK office hours (i.e. 9–5 on weekdays). If a service goes down on a Sunday morning, it stays down until we arrive in the office on Monday.
+This is a deliberate position, and the Head of Digital Experience and Engagement has accepted the risk that comes with it. The [service levels ADR](https://github.com/wellcomecollection/docs/blob/main/adr/service_levels.md) records it alongside our other service levels.
 
 ## Exceptions to this rule
 
