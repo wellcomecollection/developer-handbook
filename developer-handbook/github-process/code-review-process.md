@@ -26,7 +26,7 @@ You've been assigned a Pull Request to review, and you want to get started.
 	- Typos!
 	- Do the tests cover all cases? Do they actually test what they say they are testing?
 
-- Ensure you follow the "How to test" section, and run your own tests on top of it if you can think of other useful ones.
+- Follow the "How was this tested?" section, and run your own tests on top of it if you can think of other useful ones.
 
 - If you see something cool, or a nice detail, point it out. Positive comments on a PR are always appreciated.
 
