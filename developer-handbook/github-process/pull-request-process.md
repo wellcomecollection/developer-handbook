@@ -33,7 +33,7 @@ A pull request should have a clear description with:
 
 * Linked ticket, which is where the context should live
 * Changes made
-* How to test
+* How it was tested, so a reviewer can repeat it
 * Risks and plan to mitigate
 
 If useful, leave comments throughout the code before making it "Ready for review", to add to the context of the changes. If they are important, or useful for future devs, it should be left as comments in the code instead.
