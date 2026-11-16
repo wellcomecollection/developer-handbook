@@ -2,9 +2,11 @@
 
 The bug nurse is the person from the Digital Platform or Digital Experience team who watches our alert and feedback channels for the week and makes sure each item reaches someone who will act on it. They do not have to fix everything themselves, but each alert should end up acknowledged and either handled, handed to its owner or ticketed.
 
+Fixing vulnerabilities is a separate role. Owning teams fix their own, and each sprint a vulnerabilities lead from the Digital Platform team takes what is left (see [The vulnerabilities lead](#the-vulnerabilities-lead)).
+
 ### Who is on the rota
 
-Names and dates are on the Slack canvas "Bug nurse / vulnerabilities", linked from the topic of #wc-platform-alerts. One or two people cover each week, and a Slackbot reminder in #wc-digital-general names them on Mondays. Each sprint, one of them also takes the vulnerabilities day (see [The vulnerabilities day](#the-vulnerabilities-day)).
+One person is bug nurse each week. Names and dates are on the Slack canvas "Bug nurse / vulnerabilities", linked from the topic of #wc-platform-alerts, and the delivery manager names the week's bug nurse in #wc-digital-general on Mondays.
 
 ### Daily duties
 
@@ -13,6 +15,7 @@ Do this each working morning, and look in again during the day.
 | Channel | What to look at | Done means |
 |---|---|---|
 | #wc-platform-security-alerts | The GitHub security digest (07:30 weekdays) and the Inspector digest (07:31 weekdays) | Each new critical has an emoji; anything that needs work has an owner or a ticket |
+| #wc-platform-security-alerts | New Dependabot criticals and highs, from the GitHub digest and the security overview it links | Each is handed to the repository's owning team, as named in Backplane, or raised in #wc-digital-platform if it has none |
 | #wc-platform-security-alerts | Real-time Inspector criticals (they start with `:rotating_light:`) | The owning team has seen it, or you have started the fix |
 | #wc-platform-security-alerts | Secret scanning alerts, posted within 15 minutes | The secret is revoked or rotated, then removed from the code (see [Same-day work](#same-day-work)) |
 | #wc-platform-security-alerts | GuardDuty, IAM change and `admin/` secret access alerts | Someone has confirmed in the thread that it was expected (see [Unexpected security events](#unexpected-security-events)) |
@@ -40,6 +43,8 @@ The D&T Vulnerability Management Standard sets these timescales, counted from th
 | Medium | 60 days |
 | Low | 90 days |
 
+The owning team fixes its own criticals and highs within these timescales, and handles routine Dependabot version updates. The bug nurse makes sure the owner knows about it, and the vulnerabilities lead picks up anything owners have not fixed.
+
 Severity starts from the CVSS score (9.0 and above is critical, 7.0 to 8.9 high), but you can raise or lower it for our context, for example when the vulnerable code never runs or the resource is not reachable from the internet. Record the reason in the ticket or thread. The Inspector digest shows how long each critical has been open and marks criticals overdue after 7 days and highs after 14.
 
 #### Same-day work
@@ -59,13 +64,15 @@ If nobody confirms it on the same day, or it looks like a compromise, raise it i
 
 Digirati run our IIIF services, some of them in their own AWS account. The real-time alerts say "Owned by Digirati, who run it" for a finding that only runs in their account, and the digest lists their criticals after ours. Raise these in #digirati with a link to the digest thread, and follow up on any that pass their timescale. Where a fix depends on Digirati and cannot be made in time, record it as an exception through a suppression rule (see below), naming the compensating control.
 
-### The vulnerabilities day
+### The vulnerabilities lead
 
-One day each sprint goes on vulnerabilities, as a child issue of the standing vulnerabilities issue in our internal infrastructure repository, assigned to that sprint's bug nurse. On that day:
+The vulnerabilities lead is a different role from the bug nurse. One person from the Digital Platform team takes it for each sprint, and it is not that sprint's bug nurse unless that cannot be avoided. At sprint start they are assigned the sprint's tracking issue, a child of the standing vulnerabilities issue in our internal infrastructure repository, which holds the checklist.
 
-* Work through open Dependabot alerts and PRs, and the Inspector highs in the daily report.
-* Review the Inspector suppression rules and accepted risks whose review date falls in the sprint.
-* Raise PRs or rebuilds for what can be fixed, and tickets for what cannot be done in the day.
+The lead has one day in the sprint for what owners have not fixed:
+
+* Dependabot alerts and Inspector findings with no owner, past their timescale, or shared across repositories, such as a fix in scala-libs or a base image.
+* Inspector suppression rules and accepted risks whose review date falls in the sprint.
+* PRs or rebuilds for what can be fixed, and tickets for what cannot be done in the day, with leftovers noted for the next sprint's issue.
 
 #### Suppression rules and exceptions
 
