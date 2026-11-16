@@ -71,7 +71,7 @@ Then record the flip on the toggle's issue: which toggle, and why now. Run `yarn
 
 An emergency change is one that can't wait for the normal route. Only the lead engineer, or a senior engineer the lead engineer has delegated authority to, makes one.
 
-* Record the change in #wc-digital-platform when you make it, in one message per change that links the pull request or the Terraform apply.
+* Record the change in #wc-digital-platform when you make it, in one message per change that links the pull request. For a Terraform apply, link the pull request that describes it.
 * Merging without an approving review is not standard practice. Only the lead engineer does it, when it is required, and records it each time: say in the pull request body why it could not wait for review, and link the pull request in a message in #wc-digital-platform.
 * Fill in the pull request template headings afterwards.
 
