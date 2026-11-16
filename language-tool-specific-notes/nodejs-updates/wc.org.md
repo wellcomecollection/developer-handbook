@@ -1,7 +1,7 @@
 # wc.org and Content API
 
 1. Choose the Active LTS NodeJS version from the [release schedule](https://nodejs.org/en/about/previous-releases)
-2. Choose an appropriate Docker image running this version of Node – `bookworm-slim` is probably a good choice because `bookworm` means it will run likely run on a supported version of Debian until at least 2028 and `slim` means it contains everything required for a functional Node environment and nothing else
+2. Choose an appropriate Docker image running this version of Node: `bookworm-slim` is probably a good choice because `bookworm` means it will run likely run on a supported version of Debian until at least 2028 and `slim` means it contains everything required for a functional Node environment and nothing else
 3. Change this Docker version in the appropriate `Dockerfile`(s)
 4. Look in `.github/workflows` to see if any Node versions are referenced there which need updating
 5. Change your local version of Node to the one you want to target (using `nvm` or similar)
@@ -15,33 +15,14 @@
 
 ### Content API / Lambdas
 
-(\*) Test Nodejs upgrade for the content-api lambdas by manually deploying your changes and terraforming the runtime upgrade, all from your PR branch. This approach allows you to quickly and easily revert your changes in case something goes wrong, as opposed to merging your changes to `main` and having to depend on the CI pipeline to put everything right again.
+(\*) Terraform is applied to production only from `main` after the pull request has merged (see the [change model](../../developer-handbook/change-model.md#terraform)), so the content-api lambdas are upgraded through `main` rather than from your PR branch.
 
-*   package the lambdas, upload to S3 and deploy
+*   upgrade the runtime in the same PR
 
-    * run same steps as the CI pipeline
+    In `infrastructure/pipeline_stack/pipeline_lambda.tf` change the `runtime` to the target version.
+* merge the PR. The CI pipeline packages and deploys the lambda code to the live pipeline, as it does for any merge to `main`
+*   apply the runtime upgrade from `main`
 
-    ```yaml
-    yarn install --frozen-lockfile
-    yarn workspace @weco/content-pipeline run package
-    AWS_PROFILE=catalogue-ci .buildkite/scripts/upload_lambda_package.sh content-pipeline-<live-pipeline-date> ./pipeline/package.zip
-    // NOTE: the upload script uses the buildkite commit in the S3 path, replace it with something quite obvious like test-nodexx-upgrade
-
-    ```
-
-    * deploy the lambda
-
-    ```shellscript
-    aws lambda update-function-code \
-      --function-name content-pipeline-<live-pipeline-date> \
-      --s3-bucket wellcomecollection-content-api-packages \
-      --s3-key content-pipeline-<live-pipeline-date>/ref.<test-nodexx-upgrade>.zip 
-      // replace <test-nodexx-upgrade> with whatever value you set above in the upload
-    ```
-*   upgrade the runtime
-
-    In `infrastructure/pipeline_stack/pipeline_lambda.tf` change the `runtime` to the target version.\
-    From the `infrastructure` directory, and while logged in to AWS, run `./run_terraform.sh plan` to see your changes, then `./run_terraform.sh apply` to apply them.
+    Check out an up-to-date `main`. From the `infrastructure` directory, and while logged in to AWS, run `./run_terraform.sh plan` to see your changes, then `./run_terraform.sh apply` to apply them.
 * test the lambda
-* If everything looks right you can checkout out `main` locally, run the terraform to set the Node version back to what it was and deploy the `main` version of the lambda.
-* You can now merge your code changes confidently, followed by terraforming the node upgrade in the same way, ie. `./run_terraform.sh plan` then `./run_terraform.sh apply`
+* If something is wrong, raise a revert PR, merge it, and run `./run_terraform.sh plan` then `./run_terraform.sh apply` from `main` again to put the runtime back. If it can't wait for review, follow [Rolling back a change](../../developer-handbook/rollback.md#terraform).
