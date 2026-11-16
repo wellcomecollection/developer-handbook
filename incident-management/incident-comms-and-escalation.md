@@ -13,7 +13,7 @@ Start from the definition of an incident in the [incident response process](inci
 
 It still counts when a supplier, such as Digirati or Elastic, is the cause.
 
-We use two levels, "major incident" and "incident". On Statuspage, a major incident is a major or critical outage on the affected components, and an incident is degraded performance or a partial outage.
+We use two levels, "major incident" and "incident". On Statuspage, a major incident sets the affected components to major outage, and an incident sets them to degraded performance or partial outage.
 
 The delivery manager decides whether something is an incident, and anyone can start the process themselves as long as they tell the delivery manager. Either the incident lead or the delivery manager can declare a major incident, so one of them can do it when the other is away.
 
