@@ -55,6 +55,8 @@ The log lives in the incident thread in #wc-incident-response. Post each decisio
 
 The comms lead opens a Statuspage incident for every major incident that affects users.
 
+Log in at manage.statuspage.io with your wellcome.org address, choosing "Log in with Microsoft" rather than Google, or switch to Statuspage from Atlassian. If you don't have access, email the comms list (internal) with the same update instead.
+
 Choose the affected components:
 
 | Component | Covers |
@@ -70,6 +72,10 @@ Move the incident through the states as it progresses:
 * **Identified** when we know the cause
 * **Monitoring** when a fix or mitigation is in place and we are watching it
 * **Resolved** when the user-facing problem is fixed or mitigated as far as it can be
+
+Statuspage has a saved template for each state, in versions for a problem we caused, a problem at a third party and a malicious one. Apply the template, then fill in what is affected.
+
+When collection search is down, tell users about the fallbacks: [Library Hub](https://discover.libraryhub.jisc.ac.uk/search?library=wel) for library holdings and [Archives Hub](https://archiveshub.jisc.ac.uk/search/?frepository=Wellcome%20Collection) for archives.
 
 Supplier-caused incidents get a Statuspage incident too, as the Digirati ones did in April and May 2026.
 
