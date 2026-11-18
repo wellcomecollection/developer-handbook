@@ -29,7 +29,7 @@ The merged pull request together with the GitHub Deployment that shipped it is t
 
 ### Standard changes
 
-A standard change is a kind of change we have agreed in advance is low risk and has a written procedure. Say in the pull request which entry it falls under, and get an approving review from someone other than you as usual. The catalogue is in the [ADR](https://github.com/wellcomecollection/docs/blob/main/adr/change_model.md#standard-changes), and today it has five entries:
+A standard change is a kind of change we have agreed in advance is low risk and has a written procedure. Say in the pull request which entry it falls under, and get an approving review from someone other than you as usual, unless the entry says otherwise. The catalogue is in the [ADR](https://github.com/wellcomecollection/docs/blob/main/adr/change_model.md#standard-changes), and today it has six entries:
 
 | Change | Procedure |
 |---|---|
@@ -38,6 +38,7 @@ A standard change is a kind of change we have agreed in advance is low risk and 
 | Updating a WAF IP list or a block list through a pull request, either to the WAF IP set updaters or to add an address to a block list | [WAF IP set updaters](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/ip-updaters/README.md), and "Bot or scraper traffic slows or breaks the site" in the [website runbook](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/content/docs/runbook.md#bot-or-scraper-traffic-slows-or-breaks-the-site) |
 | Changing an ECS service's task count or an Elastic Cloud deployment's size within agreed bounds | [Scaling bounds](#scaling-bounds) below |
 | Publishing a Prismic content model change in the documented order | [Updating an existing custom type](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/prismic-model/README.md#updating-an-existing-custom-type) in the prismic-model README |
+| A Terraform change whose plan touches only non-production resources: staging, dev or test environments, or a root that serves no production traffic. Shared resources (IAM, networking, DNS, KMS, state backends, and anything production also uses) never count | Paste the plan summary in the pull request to show it. Merge to `main` without a review, post a message in #wc-digital-platform linking the pull request, then apply from `main` as usual |
 
 To add or remove an entry, raise a pull request to the ADR. The lead engineer reviews the catalogue every quarter.
 
@@ -72,7 +73,7 @@ Then record the flip on the toggle's issue: which toggle, and why now. Run `yarn
 An emergency change is one that can't wait for the normal route. Only the lead engineer, or a senior engineer the lead engineer has delegated authority to, makes one.
 
 * Record the change in #wc-digital-platform when you make it, in one message per change that links the pull request. For a Terraform apply, link the pull request that describes it.
-* Merging without an approving review is not standard practice. Only the lead engineer does it, when it is required, and records it each time: say in the pull request body why it could not wait for review, and link the pull request in a message in #wc-digital-platform.
+* Merging without an approving review is not standard practice. Only the lead engineer does it, when it is required, and records it each time: say in the pull request body why it could not wait for review, and link the pull request in a message in #wc-digital-platform. The exception is the [non-production Terraform standard change](#standard-changes), which any admin may merge without a review, posting a message in #wc-digital-platform that links the pull request.
 * Fill in the pull request template headings afterwards.
 
 If you are not the lead engineer or a delegated senior engineer and something needs fixing now, follow the [incident response process](../incident-management/incident-response-process.md) and find one of them.
