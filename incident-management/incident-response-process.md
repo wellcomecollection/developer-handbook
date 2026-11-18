@@ -1,5 +1,7 @@
 # Incident Response Process
 
+This page says what an incident is and how we work one in Slack. For a major incident, follow the [incident comms and escalation](incident-comms-and-escalation.md) playbook as well: roles, update cadence, Statuspage, the banner and escalating to suppliers.
+
 ### What's an incident?
 
 An incident is defined as a severe immediate or short-term potential degradation in the user-facing performance of our services.
@@ -54,7 +56,7 @@ It's the role of the delivery manager to identify whether a reported issue quali
 
 The delivery manager is responsible for communicating the issue with stakeholders, by taking that action themselves or delegating it as appropriate.
 
-They are responsible for updating [https://status.wellcomecollection.org/](https://status.wellcomecollection.org/) with relevant details of an ongoing incident.
+In a major incident the delivery manager is usually the comms lead, with the lead engineer as cover, and the comms lead updates [Statuspage](https://status.wellcomecollection.org/) as the [playbook](incident-comms-and-escalation.md#statuspage) describes.
 
 The delivery manager can declare an incident resolved and decide who to prioritise any upcoming work related to it. For example the delivery manager may co-ordinate any clean-up work or schedule a post-mortem for that incident.
 
@@ -72,5 +74,5 @@ Any security incidents should be reported to the Head of Information Security.
 
 ### See also
 
-* [Incident retrospectives](broken-reference) in "How we work"
+* [Incident comms and escalation](incident-comms-and-escalation.md), the major incident playbook, including [retros](incident-comms-and-escalation.md#postmortem)
 * Our [write-ups of previous incidents](https://github.com/wellcomecollection/docs/tree/main/incident_retros) on GitHub
