@@ -55,6 +55,8 @@ The log lives in the incident thread in #wc-incident-response. Post each decisio
 
 The comms lead opens a Statuspage incident for every major incident that affects users.
 
+Log in at manage.statuspage.io with your wellcome.org address, choosing "Log in with Microsoft" rather than Google, or switch to Statuspage from Atlassian. If you don't have access, email the comms list (internal) with the same update instead.
+
 Choose the affected components:
 
 | Component | Covers |
@@ -71,13 +73,32 @@ Move the incident through the states as it progresses:
 * **Monitoring** when a fix or mitigation is in place and we are watching it
 * **Resolved** when the user-facing problem is fixed or mitigated as far as it can be
 
+Statuspage has a saved template for each state, in versions for a problem we caused, a problem at a third party and a malicious one. Apply the template, then fill in what is affected.
+
+When collection search is down, tell users about the fallbacks: [Library Hub](https://discover.libraryhub.jisc.ac.uk/search?library=wel) for library holdings and [Archives Hub](https://archiveshub.jisc.ac.uk/search/?frepository=Wellcome%20Collection) for archives.
+
 Supplier-caused incidents get a Statuspage incident too, as the Digirati ones did in April and May 2026.
 
 If Statuspage itself is unavailable, as it was during the AWS outage on 2025-10-20, the comms lead emails the stakeholder distribution list instead, and updates Statuspage once it is back.
 
 #### Site banner
 
-The site banner has Prismic and non-Prismic versions, switched with toggles. The comms lead decides whether to put it up. Anyone with Prismic editor access posts it, and the incident lead can post it if no editor is available.
+The comms lead decides whether to put a banner up. There are two:
+
+* **The Prismic banner**, whose text and display are set in Prismic. Anyone with Prismic editor access posts it, and the incident lead can post it if no editor is available.
+* **The website issues banner**, for when Prismic itself may be unavailable. Its text is in the website code, so it changes only with a deploy. A developer turns it on for everyone with the `issuesBanner` toggle, running `yarn setDefaultValueFor --TOGGLE_ID=true` from `main` as the [toggles README](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/toggles/README.md) describes, and turns it off the same way. During an incident the decision log is the record of the flip, in place of the toggle issue that [turning on a front-end feature](../developer-handbook/change-model.md#turning-on-a-front-end-feature) describes.
+
+Whoever puts a banner up or takes it down tells Digital Editorial.
+
+### Levers
+
+These toggles change what users see while an incident is under way. A developer turns each one on or off for everyone with `yarn setDefaultValueFor` from `main`, and posts it in the decision log.
+
+| Toggle | When to use it |
+|---|---|
+| `disableRequesting` | Requesting is broken or unavailable. It replaces the "sign in to request items" message with one saying requesting is unavailable and when it will be back. Its toggle has a "turn off requesting" guide (internal) |
+| `aggregationsInSearch` | The catalogue API is slow or failing under load. Turning it off removes search aggregations, an expensive part of each query, until the API recovers |
+| `issuesBanner` | The website has a problem that will take a while to fix or is out of our control. See [Site banner](#site-banner) |
 
 ### Escalating to suppliers
 
