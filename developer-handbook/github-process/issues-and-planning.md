@@ -1,6 +1,6 @@
 # Issues and planning
 
-This page describes how the Digital Platform and Digital Experience teams record, plan and track work in GitHub. The two teams share a sprint rhythm and most of their conventions, and the page says where they differ.
+This page describes how the Digital Platform and Digital Experience teams record, plan and track work in GitHub. The two teams share a sprint rhythm and most of their conventions, and each section says where their practice differs.
 
 ## Where work lives
 
@@ -37,7 +37,7 @@ On Platform, a larger piece of work is a tracking issue, with the Epic type and 
 
 On Experience, a larger piece of work is usually a user story with the Feature type, broken into sub-issues as the work becomes clear. Related stories are grouped with an `epic:` label.
 
-The two teams differ on where the estimate sits. Platform estimates the sub-issues, and Experience estimates the user story. The Experience team is still discussing whether to change that, so this page does not set a rule for it.
+The two teams put the estimate in different places. Platform estimates the sub-issues, and Experience estimates the user story.
 
 ## Intake and triage
 
@@ -83,6 +83,13 @@ Each sprint has an overview issue labelled `🏁 Sprint Overview` at the top of 
 The Status column runs Icebox, Backlog, Ready for refinement, Sprint ready, a column for the current sprint named by its start date, In progress, Ready for review, Blocked, Done and Archive. The board has no Sprint iteration field, so the sprint column is the commitment.
 
 The product manager leads a backlog refinement session each fortnight with the senior developers and the delivery manager, where user stories are estimated and moved to Sprint ready.
+
+The Digital Experience team's ways of working are in Notion (internal):
+
+* [Planning](https://www.notion.so/wellcometrust/Planning-66afb8e41b084a90838fa53722e20e77) (internal)
+* [Sprint plans](https://www.notion.so/wellcometrust/Sprint-plans-54f9c0b1759c49d8b2a3ff1ba25b1db3) (internal)
+* [QA](https://www.notion.so/wellcometrust/QA-1766687658a180c996c7f91a6913cfb2) (internal)
+* [Allocating assignees and reviewers](https://www.notion.so/wellcometrust/Allocating-assignees-and-reviewers-2486687658a1807e8d12c1e44efaadb0) (internal)
 
 ## Quarterly objectives
 
