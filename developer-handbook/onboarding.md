@@ -4,6 +4,8 @@ description: List of useful things for an engineer who's just joined the team - 
 
 # Onboarding
 
+Start with [New to the team? Start here](https://www.notion.so/wellcometrust/New-to-the-team-Start-here-6282d39c584b418e8e081e64e3685d3c) in Notion (internal), which covers the whole digital team. This page adds what engineers need.
+
 ### Project Management Tool
 
 We use [Github projects](https://github.com/orgs/wellcomecollection/projects) to show and communicate on what we are working on.
@@ -20,7 +22,7 @@ We use [Github projects](https://github.com/orgs/wellcomecollection/projects) to
 
 * [Prismic linting report](https://dash.wellcomecollection.org/prismic-linting/): This is for our Editorial team to be aware of various linting errors and warning in Prismic, our CMS. The script that is run is owned by us and more linting rules can be added by devs [in our codebase](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/prismic-model/lintPrismicData.ts).
 * [pa11y report](https://dash.wellcomecollection.org/pa11y): [Pa11y](https://pa11y.org/) is a third party package that tests specified pages against WCAG standards. Find out more in [our README file](https://github.com/wellcomecollection/wellcomecollection.org/tree/main/pa11y).
-* Toggles: See [Toggles page](broken-reference).
+* Toggles: see the [toggles and feature flags page](front-end/toggles-feature-flags.md).
 
 ### Code base
 
@@ -53,7 +55,7 @@ The platform calls three core API's, which Wellcome collection uses.
    Repository: [https://github.com/wellcomecollection/content-api](https://github.com/wellcomecollection/content-api)
 3.  **Prismic -** provide dynamic content for various pages using Prismic
 
-    [Area where we make calls to WellcomeCollection Prismic API](https://github.com/wellcomecollection/wellcomecollection.org/tree/master/common/services/prismic)
+    [Area where we make calls to WellcomeCollection Prismic API](https://github.com/wellcomecollection/wellcomecollection.org/tree/main/common/services/prismic)
 
     Before playing around with Prismic api please read docs
 
@@ -101,7 +103,7 @@ You should be able to view various pipelines for all the applications and the bu
 
 #### P**ipeline settings**
 
-[https://github.com/wellcomecollection/wellcomecollection.org/blob/master/.buildkite/pipeline.yml](https://github.com/wellcomecollection/wellcomecollection.org/blob/master/.buildkite/pipeline.yml)
+[https://github.com/wellcomecollection/wellcomecollection.org/blob/main/.buildkite/pipeline.yml](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/.buildkite/pipeline.yml)
 
 **AWS**
 
@@ -109,9 +111,9 @@ You should be able to view various pipelines for all the applications and the bu
 
 Most of the applications uses terraform which we use provider AWS - allows automate, managing provisioning infrastructure by code.
 
-Catalogue Application of Terraform code
+Content application Terraform code, which now includes the catalogue pages
 
-[https://github.com/wellcomecollection/wellcomecollection.org/tree/master/catalogue/terraform](https://github.com/wellcomecollection/wellcomecollection.org/tree/master/catalogue/terraform)
+[https://github.com/wellcomecollection/wellcomecollection.org/tree/main/content/terraform](https://github.com/wellcomecollection/wellcomecollection.org/tree/main/content/terraform)
 
 Useful videos explaining the purpose of Terraform and purpose of use for Dev ops responsibilities.
 

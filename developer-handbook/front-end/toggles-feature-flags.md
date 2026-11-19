@@ -32,7 +32,7 @@ We can run a script that turns these toggle **ON** for _the wider public_, which
 
 **Test** toggles are used, in conjunction with a [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html), to facilitate A/B testing. Creating a toggle of type 'test' and adding it to the dashboard ensures that the status of the toggle gets sent to GA alongside event data (so we can analyse the impact of the toggled code) and allows people to opt in and out of the test. The [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is used to split traffic 50/50 by setting a cookie value for the toggle automatically when web pages are viewed.
 
-Steps to create an A/B test are available [here](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/README.md#steps-to-create-an-ab-test).
+Steps to create an A/B test are available [here](https://github.com/wellcomecollection/wellcomecollection.org/blob/main/cache/README.md#steps-to-create-an-ab-test). How the Digital Experience team runs A/B tests is under [How we work in Notion](https://www.notion.so/wellcometrust/How-we-work-8dc54e71aee345009dbea1e4fba577f5) (internal).
 
 ### Before turning a toggle ON
 
