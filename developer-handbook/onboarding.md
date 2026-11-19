@@ -6,7 +6,7 @@ description: List of useful things for an engineer who's just joined the team - 
 
 ### Project Management Tool
 
-We use [Github projects](https://github.com/orgs/wellcomecollection/projects) to show and communicate on what we are working on.
+We use [GitHub projects](https://github.com/orgs/wellcomecollection/projects) to show and communicate on what we are working on. [Issues and planning](github-process/issues-and-planning.md) explains how.
 
 ### Environments
 

@@ -3,6 +3,7 @@
 * [Developer handbook](README.md)
   * [Onboarding](developer-handbook/onboarding.md)
   * [GitHub Process](developer-handbook/github-process/README.md)
+    * [Issues and planning](developer-handbook/github-process/issues-and-planning.md)
     * [Pull request creation](developer-handbook/github-process/pull-request-process.md)
     * [Code review considerations](developer-handbook/github-process/code-review-process.md)
     * [Post-code review process](developer-handbook/github-process/post-code-review.md)
