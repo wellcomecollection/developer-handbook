@@ -43,7 +43,7 @@ The Statuspage bot reminds #wc-incident-response when an incident has been open 
 
 Post the update on time even when nothing has changed. For example: "Search is still unavailable. We think the cause is the Elasticsearch cluster and are working with Elastic. Next update by 14:30."
 
-The comms list is kept in Statuspage and Notion (internal).
+The comms list is kept in Statuspage and on the [Site problems page in Notion](https://app.notion.com/p/wellcometrust/Site-problems-41d5b3a820a649faa2cdf5982b4a4b25) (internal).
 
 ### Decision log
 
