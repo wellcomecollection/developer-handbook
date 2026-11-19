@@ -2,9 +2,11 @@
 
 This page describes how the Digital Platform and Digital Experience teams record, plan and track work in GitHub. The two teams share a sprint rhythm and most of their conventions, and each section says where their practice differs.
 
+The teams are trying out new ways of working, so update this page when practice changes.
+
 ## Where work lives
 
-Platform work is recorded as issues in [wellcomecollection/platform](https://github.com/wellcomecollection/platform/issues), and Experience work as issues in [wellcomecollection.org](https://github.com/wellcomecollection/wellcomecollection.org/issues). Each team plans from its own board:
+An issue lives in the repository the work is in, so a content API issue goes in [wellcomecollection/content-api](https://github.com/wellcomecollection/content-api/issues). Work that does not belong to one repository goes in [wellcomecollection/platform](https://github.com/wellcomecollection/platform/issues). Each team plans from its own board, which gathers issues from all of its repositories:
 
 | Board | Used for |
 |---|---|
@@ -55,7 +57,7 @@ Sprint planning aims at the team's running average of points per sprint, which t
 
 Both teams run two-week sprints that start on a Wednesday, six to a quarter. The last sprint of a quarter can be short, and a firebreak week follows the quarter.
 
-The teams hold a daily stand-up and plan at the start of each sprint. Platform holds a retro in the week between plannings, and every fourth week the retro is a joint one with Experience. The two teams also hold a joint technical review every fortnight and a Show and Tell for colleagues every five or six weeks.
+The teams hold a daily stand-up and plan at the start of each sprint. They both hold retros in the week between plannings, and every fourth week the retro is a joint one. The two teams also hold a joint technical review every fortnight and a Show and Tell for colleagues every five or six weeks.
 
 ### Digital Platform board
 
@@ -80,7 +82,7 @@ Each sprint has an overview issue labelled `🏁 Sprint Overview` at the top of 
 
 ### Digital Experience board
 
-The Status column runs Icebox, Backlog, Ready for refinement, Sprint ready, a column for the current sprint named by its start date, In progress, Ready for review, Blocked, Done and Archive. The board has no Sprint iteration field, so the sprint column is the commitment.
+Experience work moves through the board from Icebox and Backlog, through Ready for refinement and Sprint ready, into the current sprint's column, which is named by its start date. From there it goes to In progress, Ready for review or Blocked, and then Done and Archive. The work in the sprint's column is what the team has committed to for that sprint.
 
 The product manager leads a backlog refinement session each fortnight with the senior developers and the delivery manager, where user stories are estimated and moved to Sprint ready.
 
