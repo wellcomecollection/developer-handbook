@@ -20,7 +20,7 @@ If you're working on something big, consider splitting it in multiple PRs. If th
 
 Avoid adding any `TODO` at all to `main`. If they aren't as urgent or related to the original ticket, they don't need to be addressed in your PR (and probably shouldn't be). Either:
 
-* Create a ticket to do the work that can be prioritised. Then raise it in Slack if it's something to bring up to the next planning/ensure it's on the team's radar if it's a bigger piece of work. or
+* Create a ticket to do the work that can be prioritised. Then raise it in Slack if it's something to bring up to the [next planning](issues-and-planning.md#intake-and-triage)/ensure it's on the team's radar if it's a bigger piece of work. or
 * Fix the issue before merging
 
 Add a comment describing the peculiarity or optimisation for context for the next person to read without implying the next person should fix it. In this context, you could link to the GitHub issue.

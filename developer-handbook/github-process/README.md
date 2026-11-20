@@ -1,12 +1,12 @@
 # GitHub Process
 
-See [How we work in Notion](https://www.notion.so/wellcometrust/How-we-work-8dc54e71aee345009dbea1e4fba577f5?pvs=4) for a view on team processes.
+See [Issues and planning](issues-and-planning.md) for how we raise, plan and track work.
 
 ## Language used: Projects, Issues & Pull Requests (PRs)
 
 Projects, Issues & PRs overlap in GitHub, here is how we think about them:
 
-* Projects are quarterly iterations of the projects [available in Github](https://github.com/orgs/wellcomecollection/projects).
+* Projects are the standing team boards [available in GitHub](https://github.com/orgs/wellcomecollection/projects). Sprints are the iterations within them.
 * Issues & PRs are both _change requests_.
 * A PR is the unit of deployment, i.e. PRs should be deployable in isolation (where possible).
 * PRs reference a set of git commits which in totality describe a coherent functional change.
@@ -23,6 +23,7 @@ We're approaching this from a place of believing code review to be an excellent 
 
 So have a look through, and feel free to submit changes. In order:
 
+* [Issues and planning](issues-and-planning.md)
 * [Pull request creation](pull-request-process.md)
 * [Code review considerations](code-review-process.md)
 * [Post-code review process](post-code-review.md)
